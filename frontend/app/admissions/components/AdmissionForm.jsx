@@ -1,12 +1,42 @@
 'use client';
-import React from 'react';
-import { Send } from 'lucide-react';
+import React, { useState } from 'react';
+import { Send, CheckCircle } from 'lucide-react';
 
 export default function AdmissionForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setTimeout(() => {
+      setIsSubmitting(false);
+      setSubmitted(true);
+    }, 1000);
+  };
+
+  if (submitted) {
+    return (
+      <div className="lg:col-span-2 p-8 rounded-3xl bg-slate-900/60 border border-slate-800 text-center flex flex-col items-center justify-center min-h-[400px]">
+        <CheckCircle className="w-16 h-16 text-emerald-500 mb-4" />
+        <h3 className="text-2xl font-bold text-white mb-2">Application Submitted!</h3>
+        <p className="text-slate-400 max-w-sm mb-8">
+          Thank you for applying to KMCT Law College. Our admissions team will review your application and contact you shortly.
+        </p>
+        <button
+          onClick={() => setSubmitted(false)}
+          className="px-6 py-2.5 rounded-xl border border-slate-700 text-slate-300 hover:bg-slate-800 transition-colors"
+        >
+          Submit Another Application
+        </button>
+      </div>
+    );
+  }
+
   return (
     <div className="lg:col-span-2 p-8 rounded-3xl bg-slate-900/60 border border-slate-800 space-y-6">
       <h2 className="text-2xl font-bold text-white">Online Application Form</h2>
-      <form className="space-y-4 text-sm" onSubmit={(e) => e.preventDefault()}>
+      <form className="space-y-4 text-sm" onSubmit={handleSubmit}>
         <div className="grid md:grid-cols-2 gap-4">
           <div>
             <label className="block text-slate-300 mb-1 text-xs font-medium">Full Name</label>
@@ -55,9 +85,14 @@ export default function AdmissionForm() {
 
         <button
           type="submit"
-          className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold shadow-lg shadow-indigo-500/25 transition-all"
+          disabled={isSubmitting}
+          className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-semibold shadow-lg shadow-indigo-500/25 transition-all w-full sm:w-auto disabled:opacity-70"
         >
-          Submit Application <Send className="w-4 h-4" />
+          {isSubmitting ? 'Submitting...' : (
+            <>
+              Submit Application <Send className="w-4 h-4" />
+            </>
+          )}
         </button>
       </form>
     </div>
