@@ -43,15 +43,11 @@ export default function Navbar() {
 
           {/* Top Right Links */}
           <div className="flex items-center gap-6 text-blue-100 font-medium">
-            <Link href="/virtual-tour" className="flex items-center gap-1.5 hover:text-white transition-colors">
-              <Compass className="w-3.5 h-3.5" />
-              <span>Virtual Tour</span>
-            </Link>
             <Link href="/admissions" className="hover:text-white transition-colors">
               Admissions
             </Link>
-            <Link href="/clubs" className="hover:text-white transition-colors">
-              Clubs
+            <Link href="/faq" className="hover:text-white transition-colors">
+              FAQ
             </Link>
             <Link href="/contact" className="hover:text-white transition-colors">
               Contact Us
@@ -65,36 +61,12 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 md:px-6 h-24 flex items-center justify-between gap-4">
           
           {/* Logo Section */}
-          <Link href="/" className="flex items-center gap-4 shrink-0">
-            <div className="flex items-center gap-3">
-              {/* New Geometric Blue Logo mark */}
-              <div className="relative w-12 h-12 text-[#0077c8] flex items-center justify-center">
-                <svg viewBox="0 0 100 100" fill="currentColor" className="w-full h-full">
-                  <path d="M50 0 L100 25 L100 75 L50 100 L0 75 L0 25 Z" opacity="0.1" />
-                  <circle cx="50" cy="50" r="40" stroke="currentColor" strokeWidth="2" fill="none" strokeDasharray="4 4" />
-                  <polygon points="50,15 85,35 85,65 50,85 15,65 15,35" fill="none" stroke="currentColor" strokeWidth="4" />
-                  <polygon points="50,30 65,40 65,60 50,70 35,60 35,40" fill="currentColor" />
-                </svg>
-              </div>
-              <div className="leading-tight flex flex-col">
-                <div className="flex items-baseline gap-1">
-                  <span className="text-2xl font-serif tracking-wide text-black">KMCT</span>
-                  <span className="text-xs text-slate-500 font-serif">.org</span>
-                </div>
-                <span className="text-[10px] block text-slate-500 tracking-[0.2em] font-medium uppercase mt-0.5">
-                  Group of Institutions
-                </span>
-              </div>
-            </div>
-            <div className="h-10 w-px bg-slate-300 hidden md:block mx-2" />
-            <div className="hidden md:block leading-tight">
-              <span className="text-lg font-serif tracking-wide text-black block uppercase">
-                KMCT College of
-              </span>
-              <span className="text-lg font-serif tracking-wide text-black block uppercase mt-0.5">
-                Legal Studies
-              </span>
-            </div>
+          <Link href="/" className="flex items-center shrink-0">
+            <img 
+              src="/images/logo.png" 
+              alt="KMCT College of Legal Studies Logo" 
+              className="h-14 md:h-16 w-auto object-contain" 
+            />
           </Link>
 
           {/* Desktop Navigation Links */}
@@ -117,23 +89,22 @@ export default function Navbar() {
               About Us
             </Link>
 
-            <div className="relative group cursor-pointer py-2 flex items-center gap-1 text-slate-700 hover:text-[#0077c8]">
-              <Link href="/programs">Academics</Link>
-              <ChevronDown className="w-3.5 h-3.5 group-hover:rotate-180 transition-transform" />
-            </div>
+            <Link
+              href="/programs"
+              className={`transition-colors ${
+                pathname === '/programs' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
+              }`}
+            >
+              Academics
+            </Link>
 
-            <div className="relative group cursor-pointer py-2 flex items-center gap-1 text-slate-700 hover:text-[#0077c8]">
-              <span>Department</span>
-              <ChevronDown className="w-3.5 h-3.5 group-hover:rotate-180 transition-transform" />
-            </div>
-
-            <div className="relative group cursor-pointer py-2 flex items-center gap-1 text-slate-700 hover:text-[#0077c8]">
-              <span>Fees</span>
-              <ChevronDown className="w-3.5 h-3.5 group-hover:rotate-180 transition-transform" />
-            </div>
-
-            <Link href="/facilities" className="text-slate-700 hover:text-[#0077c8] transition-colors">
-              Facilities
+            <Link
+              href="/grievance"
+              className={`transition-colors ${
+                pathname === '/grievance' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
+              }`}
+            >
+              Grievance
             </Link>
           </nav>
 
@@ -173,9 +144,7 @@ export default function Navbar() {
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-[#0077c8]">Home</Link>
             <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#0077c8]">About Us</Link>
             <Link href="/programs" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#0077c8]">Academics</Link>
-            <Link href="/admissions" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#0077c8]">Admissions</Link>
-            <Link href="/facilities" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#0077c8]">Facilities</Link>
-            <Link href="/contact" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#0077c8]">Contact Us</Link>
+            <Link href="/grievance" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#0077c8]">Grievance</Link>
           </nav>
 
           <div className="pt-6 border-t border-slate-100 flex flex-col gap-3">
