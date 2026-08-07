@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-secondary text-slate-300 pt-20 pb-8 px-6 border-t-[6px] border-primary">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-          
+
           {/* About Section */}
           <div>
             <div className="flex items-center gap-3 mb-6 h-8">
@@ -42,14 +42,21 @@ export default function Footer() {
               {[
                 { name: 'Home', path: '/' },
                 { name: 'About Us', path: '/about' },
-                { name: 'Admissions', path: '/admissions' },
+                { name: 'Admissions', path: 'https://admissions.kmct.org/', isExternal: true },
                 { name: 'Contact Us', path: '/contact' }
               ].map((link, idx) => (
                 <li key={idx}>
-                  <Link href={link.path} className="text-sm text-slate-400 hover:text-white flex items-center gap-2 group transition-colors">
-                    <ChevronRight className="w-3 h-3 text-primary group-hover:translate-x-1 transition-transform" />
-                    {link.name}
-                  </Link>
+                  {link.isExternal ? (
+                    <a href={link.path} target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-white flex items-center gap-2 group transition-colors">
+                      <ChevronRight className="w-3 h-3 text-primary group-hover:translate-x-1 transition-transform" />
+                      {link.name}
+                    </a>
+                  ) : (
+                    <Link href={link.path} className="text-sm text-slate-400 hover:text-white flex items-center gap-2 group transition-colors">
+                      <ChevronRight className="w-3 h-3 text-primary group-hover:translate-x-1 transition-transform" />
+                      {link.name}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

@@ -43,9 +43,9 @@ export default function Navbar() {
 
           {/* Top Right Links */}
           <div className="flex items-center gap-6 text-blue-100 font-medium">
-            <Link href="/admissions" className="hover:text-white transition-colors">
+            <a href="https://admissions.kmct.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               Admissions
-            </Link>
+            </a>
             <Link href="/faq" className="hover:text-white transition-colors">
               FAQ
             </Link>
