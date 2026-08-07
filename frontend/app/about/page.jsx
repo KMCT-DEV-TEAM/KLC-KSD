@@ -1,5 +1,7 @@
 import React from 'react';
 import AboutHeroSection from './components/AboutHeroSection';
+import AboutCollegeDetails from './components/AboutCollegeDetails';
+import ManagementTeam from './components/ManagementTeam';
 import VisionMission from './components/VisionMission';
 
 export const metadata = {
@@ -9,8 +11,10 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="w-full flex flex-col">
+    <div className="w-full flex flex-col bg-white">
       <AboutHeroSection />
+      <AboutCollegeDetails />
+      <ManagementTeam />
       <VisionMission />
     </div>
   );

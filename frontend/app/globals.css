@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #046CB5;
+}
+
 @layer base {
   body {
     background-color: #ffffff;
