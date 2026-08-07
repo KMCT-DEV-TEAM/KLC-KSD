@@ -2,6 +2,8 @@ import React from 'react';
 import AboutHeroSection from './components/AboutHeroSection';
 import AboutCollegeDetails from './components/AboutCollegeDetails';
 import ManagementTeam from './components/ManagementTeam';
+import PrincipalsMessage from './components/PrincipalsMessage';
+import Recognition from './components/Recognition';
 import VisionMission from './components/VisionMission';
 
 export const metadata = {
@@ -15,7 +17,10 @@ export default function AboutPage() {
       <AboutHeroSection />
       <AboutCollegeDetails />
       <ManagementTeam />
+      <PrincipalsMessage />
       <VisionMission />
+      <Recognition />
+
     </div>
   );
 }

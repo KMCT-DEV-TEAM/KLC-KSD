@@ -7,18 +7,18 @@ export default function ManagementDesk() {
       name: "Dr. K M Navas",
       title: "Chairman, KMCT Group",
       message: "Our commitment at KMCT is to foster an environment where academic rigor meets ethical responsibility. We aim to mold legal professionals who will uphold justice and lead with integrity.",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=400&auto=format&fit=crop"
+      image: "/images/Dr Navas K M.jpg.jpeg"
     },
     {
       name: "Dr. Ayisha Nazreen",
       title: "Director",
       message: "Legal education is the cornerstone of a just society. At KMCT College of Legal Studies, we integrate practical learning with deep theoretical insights to prepare our students for global challenges.",
-      image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400&auto=format&fit=crop"
+      image: "/images/Dr Ayisha Nazreen - Excecutive Trustee & Director.jpg.jpeg"
     }
   ];
 
   return (
-    <section className="py-24 px-6 bg-white relative overflow-hidden">
+    <section className="py-24 px-6 bg-slate-50 relative overflow-hidden">
       {/* Background accents */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-[100px]" />
       
