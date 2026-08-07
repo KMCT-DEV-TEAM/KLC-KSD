@@ -9,14 +9,9 @@ export default function Affiliation() {
       logo: "/images/bar council of india.svg"
     },
     {
-      title: "University of Calicut",
-      desc: "Affiliated to a recognized state university ensuring academic standards.",
-      logo: "/images/university of calicut.jpg" 
-    },
-    {
-      title: "Government of Kerala",
-      desc: "Recognized by the Higher Education Department, Govt of Kerala.",
-      logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Government_of_Kerala_Logo.svg/1024px-Government_of_Kerala_Logo.svg.png"
+      title: "Kannur University",
+      desc: "Affiliated to Kannur University, ensuring academic rigor and recognized standards.",
+      logo: "/images/kannur.png"
     }
   ];
 
@@ -24,7 +19,7 @@ export default function Affiliation() {
     <section className="py-20 px-6 relative bg-slate-100" data-aos="fade-up">
       <div className="max-w-7xl mx-auto" data-aos="fade-up">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
-          
+
           {/* Header */}
           <div className="md:w-1/3 flex flex-col items-center justify-center text-center space-y-6">
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-secondary/10 border border-secondary/20">
@@ -39,16 +34,16 @@ export default function Affiliation() {
           </div>
 
           {/* Cards */}
-          <div className="md:w-2/3 grid sm:grid-cols-3 gap-6">
+          <div className="md:w-2/3 grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
             {affiliations.map((item, idx) => (
-              <div 
-                key={idx} 
+              <div
+                key={idx}
                 className="bg-white p-6 rounded-2xl border border-slate-200 hover:border-secondary hover:shadow-lg transition-all duration-300 group text-center"
               >
                 <div className="w-16 h-16 mx-auto mb-4 bg-white rounded-full p-2 flex items-center justify-center shadow group-hover:scale-105 transition-transform">
-                  <img 
-                    src={item.logo} 
-                    alt={item.title} 
+                  <img
+                    src={item.logo}
+                    alt={item.title}
                     className="w-full h-full object-contain rounded-full"
                   />
                 </div>

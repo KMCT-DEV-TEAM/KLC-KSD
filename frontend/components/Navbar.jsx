@@ -85,7 +85,7 @@ export default function Navbar() {
             <img
               src="/images/logo.png"
               alt="KMCT College of Legal Studies Logo"
-              className="h-14 md:h-16 w-auto object-contain"
+              className="h-16 md:h-20 w-auto object-contain"
             />
           </Link>
 
