@@ -87,15 +87,16 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
                 <span className="text-sm text-slate-400 leading-relaxed">
-                  KMCT Law College<br />
-                  Kuttippuram, Kasaragod<br />
-                  Kerala, India
+                  KMCT College of Legal Studies<br />
+                  Near KCA Stadium, Mundodu,<br />
+                  Ullody P.O., Manya,<br />
+                  Kasaragod, Kerala 671321
                 </span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <a href="https://wa.me/918086634000" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-white transition-colors">
-                  +91 80866 34000
+                <a href="https://wa.me/918113064000" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  +91 81130 64000
                 </a>
               </li>
               <li className="flex items-center gap-3">

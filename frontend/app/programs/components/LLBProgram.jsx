@@ -20,7 +20,7 @@ export default function LLBProgram() {
       </div>
       <div className="p-6 rounded-2xl bg-slate-950 border border-slate-800 text-center space-y-4">
         <p className="text-sm font-semibold text-white">Ready to Apply?</p>
-        <a href="/admissions" className="block w-full py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs transition-all">
+        <a href="https://admissions.kmct.org/" target="_blank" rel="noopener noreferrer" className="block w-full py-3 rounded-xl bg-purple-600 hover:bg-purple-500 text-white font-semibold text-xs transition-all">
           Apply for 3-Year LL.B
         </a>
       </div>
