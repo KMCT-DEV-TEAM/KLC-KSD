@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Privacy Policy | KMCT Law College',
-  description: 'Privacy Policy of KMCT Law College. Learn how we handle and protect your personal information.',
+  title: 'Privacy Policy | KMCT College of Legal Studies',
+  description: 'Privacy Policy of KMCT College of Legal Studies. Learn how we handle and protect your personal information.',
 };
 
 export default function PrivacyPolicyPage() {
@@ -46,7 +46,7 @@ export default function PrivacyPolicyPage() {
 
           <h2 className="text-2xl font-bold text-slate-900 mb-4 mt-8">1. Introduction</h2>
           <p className="text-slate-600 mb-6">
-            Welcome to KMCT Law College. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.
+            Welcome to KMCT College of Legal Studies. We respect your privacy and are committed to protecting your personal data. This privacy policy will inform you as to how we look after your personal data when you visit our website (regardless of where you visit it from) and tell you about your privacy rights and how the law protects you.
           </p>
 
           <h2 className="text-2xl font-bold text-slate-900 mb-4 mt-8">2. The Data We Collect About You</h2>
@@ -79,10 +79,10 @@ export default function PrivacyPolicyPage() {
           <p className="text-slate-600 mb-6">
             If you have any questions about this privacy policy or our privacy practices, please contact us at:
             <br /><br />
-            <strong>KMCT Law College</strong><br />
-            Kuttippuram, Kerala, India<br />
-            Email: info@kmct.edu.in<br />
-            Phone: +91 494 2123 223
+            <strong>KMCT College of Legal Studies</strong><br />
+            Near KCA Stadium, Mundodu, Ullody P.O., Manya, Kasaragod, Kerala 671321<br />
+            Email: kmctcls@kmct.org<br />
+            Phone: +91 81130 64000
           </p>
         </div>
       </section>
