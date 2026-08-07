@@ -15,17 +15,17 @@ const AboutCollegeDetails = () => {
               </span>
             </div>
             <h2 className="text-3xl md:text-4xl font-extrabold text-secondary space-y-2">
-              KMCT Law College
+              KMCT College of Legal Studies
             </h2>
           </div>
 
           <p className="text-base font-medium text-slate-800 leading-relaxed">
-            Since its establishment, KMCT Law College has rapidly emerged as a center for legal excellence. Our institution is dedicated to offering rigorous academic training combined with practical exposure to the legal system.
+            Since its establishment, KMCT College of Legal Studies has rapidly emerged as a center for legal excellence. Our institution is dedicated to offering rigorous academic training combined with practical exposure to the legal system.
           </p>
 
           <div className="space-y-6 text-base text-slate-600 leading-relaxed text-justify">
             <p>
-              KMCT Law college, Kuttippuram is a self-financing law college established in the year 2013 and has set a bench mark for quality legal education in the State of Kerala. The objective of the institution focused on imparting legal education to all sects of the society. The institution was built on strong foundation and has maintained its reputation as a fine institution for legal education over a period of time.
+              KMCT College of Legal Studies, Kasaragod is a self-financing law college established in the year 2013 and has set a benchmark for quality legal education in the State of Kerala. The objective of the institution focused on imparting legal education to all sects of the society. The institution was built on strong foundation and has maintained its reputation as a fine institution for legal education over a period of time.
             </p>
 
             <p>
@@ -33,7 +33,7 @@ const AboutCollegeDetails = () => {
             </p>
 
             <p>
-              The courses offered in KMCT Law College are Integrated 5 year B.B.A.LL.B, B.Com.LL.B and 3 year L.L.B programmes. B.B.A.LL.B and B.Com.LL.B programmes
+              The courses offered in KMCT College of Legal Studies are Integrated 5 year B.A. LL.B and 3 year LL.B programmes.
             </p>
           </div>
         </div>

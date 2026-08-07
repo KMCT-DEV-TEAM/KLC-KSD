@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, CheckCircle2 } from 'lucide-react';
 
-const ProgramDetails = ({ aboutText, eligibility, duration, features, syllabus }) => {
+const ProgramDetails = ({ aboutText, eligibility, duration, features }) => {
   const [openSemester, setOpenSemester] = useState(null);
 
   const toggleSemester = (idx) => {
@@ -64,46 +64,7 @@ const ProgramDetails = ({ aboutText, eligibility, duration, features, syllabus }
           </ul>
         </div>
 
-        {/* Syllabus Section */}
-        <div className="pt-8">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-secondary mb-8 border-b border-slate-200 pb-4">Syllabus</h2>
-          
-          <div className="space-y-4">
-            {syllabus.map((semester, idx) => (
-              <div 
-                key={idx} 
-                className={`border rounded-xl overflow-hidden transition-all duration-300 ${openSemester === idx ? 'border-primary/30 shadow-md shadow-primary/5 bg-slate-50' : 'border-slate-200 bg-white hover:border-primary/20'}`}
-              >
-                <button 
-                  onClick={() => toggleSemester(idx)}
-                  className="w-full px-6 py-4 flex items-center justify-between text-left focus:outline-none"
-                >
-                  <h3 className="text-xl font-bold text-slate-800">
-                    {semester.title}
-                  </h3>
-                  <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${openSemester === idx ? 'bg-primary text-white' : 'bg-slate-100 text-slate-500'}`}>
-                    {openSemester === idx ? <ChevronUp className="w-5 h-5" /> : <ChevronDown className="w-5 h-5" />}
-                  </div>
-                </button>
-                
-                <div 
-                  className={`overflow-hidden transition-all duration-300 ease-in-out ${openSemester === idx ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}`}
-                >
-                  <div className="px-6 pb-6 pt-2">
-                    <ul className="grid md:grid-cols-2 gap-x-8 gap-y-3">
-                      {semester.subjects.map((subject, sIdx) => (
-                        <li key={sIdx} className="flex items-center gap-3 text-slate-600">
-                          <div className="w-1.5 h-1.5 rounded-full bg-slate-300 shrink-0" />
-                          <span>{subject}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+
 
       </div>
     </section>
