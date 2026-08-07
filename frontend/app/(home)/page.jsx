@@ -10,11 +10,11 @@ export default function HomePage() {
   return (
     <div className="bg-white text-slate-900 min-h-screen">
       <HeroSection />
-      {/* <AboutCollege />
+      <AboutCollege />
       <Affiliation />
       <ManagementDesk />
       <OurPrograms />
-      <Facilities /> */}
+      <Facilities />
     </div>
   );
 }
