@@ -29,11 +29,14 @@ const ManagementTeam = () => {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
           {/* Left Side: Text Description */}
           <div className="lg:w-1/3 space-y-6 lg:sticky lg:top-24">
-            <div className="space-y-2">
-              <span className="text-sm font-semibold text-primary/60 tracking-widest uppercase">
-                Leadership
-              </span>
-              <h2 className="text-4xl md:text-5xl font-serif text-primary leading-tight">
+            <div className="space-y-4">
+              <div className="flex items-center gap-4">
+                <span className="w-12 md:w-16 h-px bg-primary"></span>
+                <span className="text-sm font-bold text-primary uppercase tracking-widest">
+                  Leadership
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-extrabold text-secondary leading-tight">
                 Management Team Members
               </h2>
             </div>
@@ -55,7 +58,7 @@ const ManagementTeam = () => {
                   />
                 </div>
                 <div className="space-y-1 text-center">
-                  <h3 className="text-xl font-serif text-slate-900 group-hover:text-primary transition-colors duration-300 font-medium">
+                  <h3 className="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors duration-300">
                     {member.name}
                   </h3>
                   <p className="text-xs text-primary font-semibold uppercase tracking-wider">
