@@ -41,32 +41,32 @@ export default function ManagementDesk() {
           <p className="text-slate-600 text-sm">Guided by visionaries dedicated to educational excellence and social progress.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {profiles.map((profile, idx) => (
             <div
               key={idx}
-              className="group bg-white border border-slate-200 rounded-3xl p-8 hover:border-secondary hover:shadow-xl transition-all duration-300"
+              className="group relative bg-white rounded-2xl overflow-hidden shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 flex flex-col border border-slate-100/50"
             >
-              <div className="flex flex-col gap-6 items-center text-center">
-                <div className="w-28 h-28 shrink-0 rounded-full overflow-hidden border-2 border-slate-100 group-hover:border-primary transition-colors shadow-md">
-                  <img
-                    src={profile.image}
-                    alt={profile.name}
-                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
-                  />
-                </div>
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors">{profile.name}</h3>
-                    <p className="text-xs font-bold text-secondary uppercase tracking-wider mt-1">{profile.title}</p>
-                  </div>
-                  <div className="relative text-left">
-                    <Quote className="absolute -top-2 -left-2 w-6 h-6 text-slate-200 rotate-180" />
-                    <p className="text-slate-600 text-sm italic relative z-10 pl-6 leading-relaxed">
-                      "{profile.message}"
-                    </p>
-                  </div>
-                </div>
+              {/* Full-width square image container */}
+              <div className="w-full aspect-square relative overflow-hidden bg-slate-100">
+                <img
+                  src={profile.image}
+                  alt={profile.name}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 absolute inset-0"
+                />
+                {/* Subtle gradient overlay at the bottom of the image for depth */}
+                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              </div>
+              
+              {/* Text Content */}
+              <div className="p-6 bg-white relative z-10 flex flex-col items-center text-center flex-1">
+                <h3 className="text-xl font-extrabold text-slate-900 group-hover:text-primary transition-colors duration-300 mb-2">
+                  {profile.name}
+                </h3>
+                <div className="w-6 h-px bg-secondary rounded-full mb-3 transition-all duration-500 group-hover:w-12 group-hover:bg-primary" />
+                <p className="text-sm text-slate-600 font-semibold uppercase tracking-wider mb-4">
+                  {profile.title}
+                </p>
               </div>
             </div>
           ))}
