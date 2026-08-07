@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <div className="w-full min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[75vh] md:min-h-[85vh] flex items-center bg-slate-900 overflow-hidden">
+      <section className="relative w-full min-h-[75vh] md:min-h-[85vh] flex items-center bg-slate-900 overflow-hidden" data-aos="fade-up">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 w-full h-full">
           <Image
@@ -44,7 +44,7 @@ export default function ContactPage() {
       </section>
 
       {/* Main Content Area */}
-      <section className="w-full bg-slate-50 py-24">
+      <section className="w-full bg-slate-50 py-24" data-aos="fade-up">
         <div className="max-w-7xl mx-auto px-6">
           <ContactInfo />
         </div>

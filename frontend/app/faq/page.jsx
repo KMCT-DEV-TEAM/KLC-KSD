@@ -12,7 +12,7 @@ export default function FAQPage() {
   return (
     <div className="w-full min-h-screen bg-white pb-24">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[75vh] md:min-h-[85vh] flex items-center bg-slate-900 overflow-hidden">
+      <section className="relative w-full min-h-[75vh] md:min-h-[85vh] flex items-center bg-slate-900 overflow-hidden" data-aos="fade-up">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 w-full h-full">
           <Image
@@ -44,7 +44,7 @@ export default function FAQPage() {
       </section>
 
       {/* FAQ Main Content Area */}
-      <section className="py-12 md:py-20 px-6 max-w-7xl mx-auto">
+      <section className="py-12 md:py-20 px-6 max-w-7xl mx-auto" data-aos="fade-up">
         <div className="text-center space-y-4 max-w-3xl mx-auto mb-16">
           <div className="flex items-center justify-center gap-4">
             <span className="w-12 md:w-16 h-px bg-primary"></span>
@@ -66,7 +66,7 @@ export default function FAQPage() {
       </section>
 
       {/* Still Have Questions Box */}
-      <section className="max-w-4xl mx-auto px-6 mt-8">
+      <section className="max-w-4xl mx-auto px-6 mt-8" data-aos="fade-up">
         <div className="bg-slate-50 rounded-2xl p-8 md:p-10 border border-slate-200 text-center space-y-6 shadow-sm">
           <h3 className="text-2xl font-bold text-slate-900">Still have questions?</h3>
           <p className="text-slate-600 max-w-2xl mx-auto">

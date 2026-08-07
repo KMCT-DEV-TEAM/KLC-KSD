@@ -25,8 +25,8 @@ export default function OurPrograms() {
   ];
 
   return (
-    <section className="py-24 px-6 relative bg-slate-100">
-      <div className="max-w-7xl mx-auto space-y-16">
+    <section className="py-24 px-6 relative bg-slate-100" data-aos="fade-up">
+      <div className="max-w-7xl mx-auto space-y-16" data-aos="fade-up">
         <div className="text-center space-y-4 max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-4">
             <span className="w-12 md:w-16 h-px bg-primary"></span>

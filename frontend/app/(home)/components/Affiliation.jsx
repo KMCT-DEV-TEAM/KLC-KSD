@@ -21,8 +21,8 @@ export default function Affiliation() {
   ];
 
   return (
-    <section className="py-20 px-6 relative bg-slate-100">
-      <div className="max-w-7xl mx-auto">
+    <section className="py-20 px-6 relative bg-slate-100" data-aos="fade-up">
+      <div className="max-w-7xl mx-auto" data-aos="fade-up">
         <div className="flex flex-col md:flex-row items-center gap-12 lg:gap-24">
           
           {/* Header */}

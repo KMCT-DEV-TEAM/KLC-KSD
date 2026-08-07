@@ -1,6 +1,9 @@
 import './globals.css';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import AosInit from '../components/AosInit';
+import PageTransitionLoader from '../components/PageTransitionLoader';
+import FloatingActions from '../components/FloatingActions';
 
 export const metadata = {
   title: 'KMCT College of Legal Studies',
@@ -11,6 +14,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased bg-slate-50 text-slate-900 selection:bg-blue-500 selection:text-white flex flex-col min-h-screen">
+        <PageTransitionLoader />
+        <AosInit />
+        <FloatingActions />
         <Navbar />
         <main className="flex-1">
           {children}

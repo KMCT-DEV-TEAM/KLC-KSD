@@ -14,7 +14,7 @@ const ProgramDetails = ({ aboutText, eligibility, duration, features, syllabus }
   };
 
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto w-full bg-white">
+    <section className="py-20 px-6 max-w-7xl mx-auto w-full bg-white" data-aos="fade-up">
       {/* About Programme */}
       <div className="space-y-12">
         <div>

@@ -24,11 +24,11 @@ export default function ManagementDesk() {
   ];
 
   return (
-    <section className="py-24 px-6 bg-slate-50 relative overflow-hidden">
+    <section className="py-24 px-6 bg-slate-50 relative overflow-hidden" data-aos="fade-up">
       {/* Background accents */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-[100px]" />
 
-      <div className="max-w-7xl mx-auto space-y-16 relative z-10">
+      <div className="max-w-7xl mx-auto space-y-16 relative z-10" data-aos="fade-up">
         <div className="text-center space-y-4 max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-4">
             <span className="w-12 md:w-16 h-px bg-primary"></span>

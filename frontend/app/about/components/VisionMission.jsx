@@ -3,7 +3,7 @@ import { Award, Shield } from 'lucide-react';
 
 const VisionMission = () => {
   return (
-    <section className="w-full bg-slate-50 py-24">
+    <section className="w-full bg-slate-50 py-24" data-aos="fade-up">
       <div className="px-6 max-w-7xl mx-auto w-full">
         <div className="grid md:grid-cols-2 gap-10">
           <div className="p-10 rounded-[2rem] bg-white border border-slate-100 shadow-xl shadow-slate-200/50 hover:shadow-primary/10 hover:border-primary/20 transition-all duration-300 group">

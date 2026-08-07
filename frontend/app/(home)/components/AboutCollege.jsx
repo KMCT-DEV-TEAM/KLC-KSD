@@ -4,10 +4,10 @@ import Link from 'next/link';
 
 export default function AboutCollege() {
   return (
-    <section className="py-24 px-6 relative bg-white">
+    <section className="py-24 px-6 relative bg-white" data-aos="fade-up">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         {/* Left Side: Images */}
-        <div className="relative">
+        <div className="relative" data-aos="fade-right">
           <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10 border border-slate-200 relative z-10">
             <img
               src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1200&auto=format&fit=crop"
@@ -31,7 +31,7 @@ export default function AboutCollege() {
         </div>
 
         {/* Right Side: Content */}
-        <div className="space-y-8 lg:pl-8">
+        <div className="space-y-8 lg:pl-8" data-aos="fade-left">
           <div className="space-y-4">
             <div className="flex items-center gap-4">
               <span className="w-12 md:w-16 h-px bg-primary"></span>
