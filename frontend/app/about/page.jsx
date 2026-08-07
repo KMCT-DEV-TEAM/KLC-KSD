@@ -17,7 +17,7 @@ export default function AboutPage() {
       <AboutHeroSection />
       <AboutCollegeDetails />
       <ManagementTeam />
-      <PrincipalsMessage />
+      {/* <PrincipalsMessage /> */}
       <VisionMission />
       <Recognition />
 

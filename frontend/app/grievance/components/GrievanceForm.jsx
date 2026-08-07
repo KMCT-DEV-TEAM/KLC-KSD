@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { Send, FileText } from 'lucide-react';
+import { Send, ChevronDown } from 'lucide-react';
 
 export default function GrievanceForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -79,16 +79,19 @@ export default function GrievanceForm() {
               placeholder="Enter Address"
             />
           </div>
-          <select
-            required
-            className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-slate-600 appearance-none"
-          >
-            <option value="">Select a State</option>
-            <option value="kerala">Kerala</option>
-            <option value="karnataka">Karnataka</option>
-            <option value="tamilnadu">Tamil Nadu</option>
-            <option value="other">Other</option>
-          </select>
+          <div className="relative">
+            <select
+              required
+              className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-slate-600 appearance-none"
+            >
+              <option value="">Select a State</option>
+              <option value="kerala">Kerala</option>
+              <option value="karnataka">Karnataka</option>
+              <option value="tamilnadu">Tamil Nadu</option>
+              <option value="other">Other</option>
+            </select>
+            <ChevronDown className="w-5 h-5 text-slate-400 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
+          </div>
           <input
             type="text"
             required
@@ -99,26 +102,32 @@ export default function GrievanceForm() {
 
         {/* Row 3: Programme and Nature of Grievance */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <select
-            required
-            className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-slate-600 appearance-none"
-          >
-            <option value="">Programme Related to Which Grievance is</option>
-            <option value="ba_llb">BA LL.B (5 Years)</option>
-            <option value="llb">LLB (3 Years)</option>
-            <option value="other">Other</option>
-          </select>
-          <select
-            required
-            className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-slate-600 appearance-none"
-          >
-            <option value="">Nature of Grievance</option>
-            <option value="academic">Academic</option>
-            <option value="administrative">Administrative</option>
-            <option value="infrastructure">Infrastructure</option>
-            <option value="harassment">Harassment</option>
-            <option value="other">Other</option>
-          </select>
+          <div className="relative">
+            <select
+              required
+              className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-slate-600 appearance-none"
+            >
+              <option value="">Program</option>
+              <option value="ba_llb">BA LL.B (5 Years)</option>
+              <option value="llb">LLB (3 Years)</option>
+              <option value="other">Other</option>
+            </select>
+            <ChevronDown className="w-5 h-5 text-slate-400 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
+          </div>
+          <div className="relative">
+            <select
+              required
+              className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-slate-600 appearance-none"
+            >
+              <option value="">Nature of Grievance</option>
+              <option value="academic">Academic</option>
+              <option value="administrative">Administrative</option>
+              <option value="infrastructure">Infrastructure</option>
+              <option value="harassment">Harassment</option>
+              <option value="other">Other</option>
+            </select>
+            <ChevronDown className="w-5 h-5 text-slate-400 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
+          </div>
         </div>
 
         {/* Row 4: Description */}
