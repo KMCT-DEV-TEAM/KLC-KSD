@@ -1,10 +1,10 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, Suspense } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 import Loader from './Loader';
 
-export default function PageTransitionLoader() {
+function PageTransitionLoaderInner() {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const [isVisible, setIsVisible] = useState(true);
@@ -41,5 +41,13 @@ export default function PageTransitionLoader() {
     >
       <Loader fullScreen={true} transparent={false} />
     </div>
+  );
+}
+
+export default function PageTransitionLoader() {
+  return (
+    <Suspense fallback={null}>
+      <PageTransitionLoaderInner />
+    </Suspense>
   );
 }
