@@ -10,26 +10,27 @@ export default function Footer() {
 
           {/* About Section */}
           <div>
-            <div className="flex items-center gap-3 mb-6 h-8">
-              <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
-                <Scale className="w-5 h-5" />
-              </div>
-              <span className="text-white text-xl font-bold tracking-wide">KMCT Law College</span>
-            </div>
+            <Link href="/" className="inline-block mb-6">
+              <img
+                src="/images/KMCT 0123-02.png"
+                alt="KMCT Logo"
+                className="h-16 object-contain rounded-lg p-2"
+              />
+            </Link>
             <p className="text-sm leading-relaxed text-slate-400 text-justify mb-6">
               Empowering the next generation of legal minds. We are committed to nurturing legal professionals equipped with profound knowledge, ethics, and a deep sense of responsibility towards society.
             </p>
             <div className="flex items-center gap-4">
-              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+              <a href="https://share.google/FMsk2pza879LuqXjz" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+              <a href="https://share.google/xSpqwuwr2H4SaGuaN" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+              <a href="https://www.instagram.com/kmctgi/?hl=en" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+              <a href="https://share.google/44eQBN11gkCcoMIdb" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                 <Youtube className="w-4 h-4" />
               </a>
             </div>

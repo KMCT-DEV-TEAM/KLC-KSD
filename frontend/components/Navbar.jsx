@@ -47,16 +47,16 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
           {/* Social Icons */}
           <div className="flex items-center gap-4 text-blue-200">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
+            <a href="https://share.google/FMsk2pza879LuqXjz" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
               <Facebook className="w-3.5 h-3.5" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
+            <a href="https://www.instagram.com/kmctgi/?hl=en" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
               <Instagram className="w-3.5 h-3.5" />
             </a>
-            <a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
+            <a href="https://share.google/xSpqwuwr2H4SaGuaN" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
               <Twitter className="w-3.5 h-3.5" />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
+            <a href="https://share.google/44eQBN11gkCcoMIdb" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
               <Youtube className="w-3.5 h-3.5" />
             </a>
           </div>
