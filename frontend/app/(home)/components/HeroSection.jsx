@@ -8,7 +8,7 @@ export default function HeroSection() {
   return (
     <div className="relative w-full min-h-[85vh] flex flex-col justify-between bg-white text-slate-900 overflow-hidden">
       {/* Background Image with Overlay */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat transition-all duration-700 scale-105"
         style={{ backgroundImage: `url('/images/hero-bg.png')` }}
       >
@@ -63,19 +63,18 @@ export default function HeroSection() {
       </div>
 
       {/* Main Hero Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 pt-28 pb-20 flex-1 flex flex-col justify-center">
-        <div className="max-w-3xl space-y-6">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-8 pt-28 pb-20 flex-1 flex flex-col justify-center">
+        <div className="max-w-3xl text-left space-y-6">
           {/* Subtitle with subtle dashes */}
           <div className="flex items-center gap-3">
             <span className="w-8 h-px bg-blue-300/80" />
             <p className="text-xs md:text-sm font-medium text-blue-100 tracking-wide italic">
               "Pioneering Legal Education, Advocating Justice, Inspiring Excellence"
             </p>
-            <span className="w-8 h-px bg-blue-300/80" />
           </div>
 
           {/* Main Statement Heading */}
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-serif font-normal leading-[1.25] text-white tracking-tight drop-shadow-md">
+          <h1 className="text-2xl md:text-3xl lg:text-4xl font-serif font-normal leading-[1.4] text-white tracking-tight drop-shadow-md">
             KMCT College of Legal Studies is dedicated to fostering critical thinking, ethical values, and professional competence.
           </h1>
         </div>
