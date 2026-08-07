@@ -7,18 +7,19 @@ export default function Footer() {
     <footer className="bg-secondary text-slate-300 pt-20 pb-8 px-6 border-t-[6px] border-primary">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          
           {/* About Section */}
-          <div className="space-y-6">
-            <div className="flex items-center gap-3">
-              <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-white">
-                <Scale className="w-6 h-6" />
+          <div>
+            <div className="flex items-center gap-3 mb-6 h-8">
+              <div className="w-8 h-8 rounded-lg bg-primary/20 flex items-center justify-center text-primary">
+                <Scale className="w-5 h-5" />
               </div>
-              <span className="text-white text-xl font-bold tracking-wide font-serif">KMCT Law College</span>
+              <span className="text-white text-xl font-bold tracking-wide">KMCT Law College</span>
             </div>
-            <p className="text-sm leading-relaxed text-slate-400 text-justify">
+            <p className="text-sm leading-relaxed text-slate-400 text-justify mb-6">
               Empowering the next generation of legal minds. We are committed to nurturing legal professionals equipped with profound knowledge, ethics, and a deep sense of responsibility towards society.
             </p>
-            <div className="flex items-center gap-4 pt-2">
+            <div className="flex items-center gap-4">
               <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
@@ -36,12 +37,12 @@ export default function Footer() {
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-white text-lg font-serif font-semibold mb-6">Quick Links</h3>
+            <h3 className="text-white text-lg font-bold mb-6 h-8 flex items-center">Quick Links</h3>
             <ul className="space-y-3">
               {[
                 { name: 'Home', path: '/' },
                 { name: 'About Us', path: '/about' },
-                { name: 'Admissions', path: '#' },
+                { name: 'Admissions', path: '/admissions' },
                 { name: 'Contact Us', path: '/contact' }
               ].map((link, idx) => (
                 <li key={idx}>
@@ -56,17 +57,17 @@ export default function Footer() {
 
           {/* Academics */}
           <div>
-            <h3 className="text-white text-lg font-serif font-semibold mb-6">Academics</h3>
+            <h3 className="text-white text-lg font-bold mb-6 h-8 flex items-center">Academics</h3>
             <ul className="space-y-3">
               {[
-                'BA LLB (5 Years)',
-                'BBA LLB (5 Years)',
+                { name: 'BA LLB (5 Years)', path: '/academics/ba-llb' },
+                { name: 'LLB (3 Years)', path: '/academics/llb' },
               ].map((item, idx) => (
                 <li key={idx}>
-                  <a href="#" className="text-sm text-slate-400 hover:text-white flex items-center gap-2 group transition-colors">
+                  <Link href={item.path} className="text-sm text-slate-400 hover:text-white flex items-center gap-2 group transition-colors">
                     <ChevronRight className="w-3 h-3 text-primary group-hover:translate-x-1 transition-transform" />
-                    {item}
-                  </a>
+                    {item.name}
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -74,7 +75,7 @@ export default function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h3 className="text-white text-lg font-serif font-semibold mb-6">Contact Us</h3>
+            <h3 className="text-white text-lg font-bold mb-6 h-8 flex items-center">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
