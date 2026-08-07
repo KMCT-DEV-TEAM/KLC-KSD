@@ -15,12 +15,6 @@ export default function OurPrograms() {
       desc: 'Intensive law degree designed for graduates aiming to enter litigation, judicial services, or corporate law.',
       icon: GraduationCap,
       badge: 'Post-Graduate'
-    },
-    {
-      title: 'Specialized Legal Clinics',
-      desc: 'Hands-on practice in legal aid, moot court simulations, client counseling, and arbitration workshops.',
-      icon: ShieldCheck,
-      badge: 'Practical Training'
     }
   ];
 
@@ -41,7 +35,7 @@ export default function OurPrograms() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {programs.map((prog, idx) => {
             const IconComponent = prog.icon;
             return (

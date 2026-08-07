@@ -143,13 +143,12 @@ export default function Navbar() {
 
           {/* Action Buttons (Right) */}
           <div className="hidden lg:flex items-center gap-3 shrink-0">
-            <Link
-              href="/brochure"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-secondary hover:bg-primary text-white text-xs font-bold transition-all shadow-sm"
+            <div
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-secondary hover:bg-primary text-white text-xs font-bold transition-all shadow-sm cursor-default"
             >
               <Download className="w-4 h-4 hover:bg-primary" />
               <span>Download Brochure</span>
-            </Link>
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -197,13 +196,11 @@ export default function Navbar() {
           </nav>
 
           <div className="pt-6 border-t border-slate-100 flex flex-col gap-3">
-            <Link
-              href="/brochure"
-              onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-3 rounded bg-secondary hover:bg-primary text-white text-sm font-bold flex items-center justify-center gap-2 transition-all"
+            <div
+              className="w-full text-center py-3 rounded bg-secondary hover:bg-primary text-white text-sm font-bold flex items-center justify-center gap-2 transition-all cursor-default"
             >
               <Download className="w-4 h-4" /> Download Brochure
-            </Link>
+            </div>
           </div>
         </div>
       </div>
