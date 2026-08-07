@@ -1,26 +1,70 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import ContactForm from './ContactForm';
 
 export default function ContactInfo() {
+  const contactDetails = [
+    { 
+      icon: MapPin, 
+      title: 'Our Location', 
+      text: 'KMCT Law College Campus, Mampara, Pazhur P.O., Kuttippuram, Malappuram - 679571' 
+    },
+    { 
+      icon: Phone, 
+      title: 'Phone Number', 
+      text: '+91 494 2123223 / +91 94000 12345' 
+    },
+    { 
+      icon: Mail, 
+      title: 'Email Address', 
+      text: 'lawcollege@kmct.edu.in' 
+    },
+    { 
+      icon: Clock, 
+      title: 'Working Hours', 
+      text: 'Monday – Saturday: 9:00 AM – 4:30 PM' 
+    },
+  ];
+
   return (
-    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-      {[
-        { icon: MapPin, title: 'Location', text: 'KMCT Law College Campus, Kasaragod, Kerala' },
-        { icon: Phone, title: 'Phone', text: '+91 4994 200 300 / +91 94000 12345' },
-        { icon: Mail, title: 'Email', text: 'lawcollege.ksd@kmct.edu.in' },
-        { icon: Clock, title: 'Office Hours', text: 'Monday – Saturday: 9:00 AM – 4:30 PM' },
-      ].map((info, idx) => {
-        const IconComp = info.icon;
-        return (
-          <div key={idx} className="p-6 rounded-3xl bg-slate-900/60 border border-slate-800 space-y-3">
-            <div className="w-10 h-10 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400">
-              <IconComp className="w-5 h-5" />
+    <div className="space-y-12 mt-12">
+      {/* Contact Details Cards */}
+      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {contactDetails.map((info, idx) => {
+          const IconComp = info.icon;
+          return (
+            <div key={idx} className="p-8 rounded-2xl bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow flex flex-col items-start gap-4">
+              <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                <IconComp className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="text-lg font-bold text-slate-900 mb-2">{info.title}</h3>
+                <p className="text-slate-600 text-sm leading-relaxed">{info.text}</p>
+              </div>
             </div>
-            <h3 className="text-base font-bold text-white">{info.title}</h3>
-            <p className="text-xs text-slate-400 leading-relaxed">{info.text}</p>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
+
+      {/* Form and Google Map */}
+      <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+        <ContactForm />
+        
+        {/* Google Map */}
+        <div className="w-full h-full min-h-[500px] rounded-2xl overflow-hidden shadow-lg border border-slate-200">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15664.129379659021!2d76.012586!3d10.844781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ba004cfb92d5%3A0xc3f8e547df607684!2sKMCT%20Law%20College%2C%20Kuttippuram!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            width="100%"
+            height="100%"
+            style={{ border: 0, minHeight: '500px' }}
+            allowFullScreen=""
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="KMCT Law College Location"
+            className="w-full h-full grayscale-[20%] contrast-[95%]"
+          ></iframe>
+        </div>
+      </div>
     </div>
   );
 }

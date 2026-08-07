@@ -59,13 +59,13 @@ export default function Navbar() {
       {/* Main Navbar */}
       <div className="bg-white/95 backdrop-blur-md text-slate-900 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 md:px-8 h-24 flex items-center justify-between gap-4">
-          
+
           {/* Logo Section */}
           <Link href="/" className="flex items-center shrink-0">
-            <img 
-              src="/images/logo.png" 
-              alt="KMCT College of Legal Studies Logo" 
-              className="h-14 md:h-16 w-auto object-contain" 
+            <img
+              src="/images/logo.png"
+              alt="KMCT College of Legal Studies Logo"
+              className="h-14 md:h-16 w-auto object-contain"
             />
           </Link>
 
@@ -73,18 +73,16 @@ export default function Navbar() {
           <nav className="hidden xl:flex items-center gap-8 text-sm font-semibold">
             <Link
               href="/"
-              className={`transition-colors ${
-                pathname === '/' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
-              }`}
+              className={`transition-colors ${pathname === '/' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
+                }`}
             >
               Home
             </Link>
 
             <Link
               href="/about"
-              className={`transition-colors ${
-                pathname === '/about' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
-              }`}
+              className={`transition-colors ${pathname === '/about' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
+                }`}
             >
               About Us
             </Link>
@@ -92,18 +90,17 @@ export default function Navbar() {
             <div className="relative group py-2">
               <Link
                 href="/programs"
-                className={`flex items-center gap-1 transition-colors ${
-                  pathname === '/programs' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
-                }`}
+                className={`flex items-center gap-1 transition-colors ${pathname === '/programs' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
+                  }`}
               >
                 <span>Academics</span>
                 <ChevronDown className="w-3.5 h-3.5 group-hover:rotate-180 transition-transform" />
               </Link>
               <div className="absolute top-full left-0 mt-0 w-40 bg-white border border-slate-100 shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col overflow-hidden">
-                <Link href="/programs" className="px-4 py-3 text-sm font-medium text-slate-700 hover:text-[#0077c8] hover:bg-slate-50 transition-colors">
+                <Link href="/academics/ba-llb" className="px-4 py-3 text-sm font-medium text-slate-700 hover:text-[#0077c8] hover:bg-slate-50 transition-colors">
                   BA LLB
                 </Link>
-                <Link href="/programs" className="px-4 py-3 text-sm font-medium text-slate-700 hover:text-[#0077c8] hover:bg-slate-50 transition-colors">
+                <Link href="/academics/llb" className="px-4 py-3 text-sm font-medium text-slate-700 hover:text-[#0077c8] hover:bg-slate-50 transition-colors">
                   LLB
                 </Link>
               </div>
@@ -111,9 +108,8 @@ export default function Navbar() {
 
             <Link
               href="/grievance"
-              className={`transition-colors ${
-                pathname === '/grievance' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
-              }`}
+              className={`transition-colors ${pathname === '/grievance' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
+                }`}
             >
               Grievance
             </Link>
@@ -125,7 +121,7 @@ export default function Navbar() {
               href="/brochure"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-secondary hover:bg-primary text-white text-xs font-bold transition-all shadow-sm"
             >
-              <Download className="w-4 h-4" />
+              <Download className="w-4 h-4 bg-secondary" />
               <span>Download Brochure</span>
             </Link>
           </div>
@@ -149,8 +145,8 @@ export default function Navbar() {
             <div className="flex flex-col gap-3">
               <Link href="/programs" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#0077c8]">Academics</Link>
               <div className="pl-4 flex flex-col gap-3 border-l-2 border-slate-100 ml-1">
-                <Link href="/programs" onClick={() => setMobileMenuOpen(false)} className="text-slate-600 hover:text-[#0077c8]">BA LLB</Link>
-                <Link href="/programs" onClick={() => setMobileMenuOpen(false)} className="text-slate-600 hover:text-[#0077c8]">LLB</Link>
+                <Link href="/academics/ba-llb" onClick={() => setMobileMenuOpen(false)} className="text-slate-600 hover:text-[#0077c8]">BA LLB</Link>
+                <Link href="/academics/llb" onClick={() => setMobileMenuOpen(false)} className="text-slate-600 hover:text-[#0077c8]">LLB</Link>
               </div>
             </div>
             <Link href="/grievance" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#0077c8]">Grievance</Link>
