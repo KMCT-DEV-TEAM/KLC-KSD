@@ -52,10 +52,10 @@ export default function Facilities() {
   const [activeTab, setActiveTab] = useState(facilities[0]);
 
   return (
-    <section className="py-24 px-6 bg-white">
+    <section className="py-24 px-6 bg-white" data-aos="fade-up">
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-          <div className="space-y-4 max-w-2xl">
+          <div className="space-y-4 max-w-2xl" data-aos="fade-right">
             <div className="flex items-center gap-4">
               <span className="w-12 md:w-16 h-px bg-primary"></span>
               <span className="text-sm font-bold text-primary uppercase tracking-widest">

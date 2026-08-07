@@ -11,7 +11,7 @@ export default function PrivacyPolicyPage() {
   return (
     <div className="w-full min-h-screen bg-white pb-24">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[50vh] md:min-h-[60vh] flex items-center bg-slate-900 overflow-hidden">
+      <section className="relative w-full min-h-[50vh] md:min-h-[60vh] flex items-center bg-slate-900 overflow-hidden" data-aos="fade-up">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 w-full h-full">
           <Image
@@ -38,7 +38,7 @@ export default function PrivacyPolicyPage() {
       </section>
 
       {/* Content Area */}
-      <section className="py-12 px-6 max-w-4xl mx-auto">
+      <section className="py-12 px-6 max-w-4xl mx-auto" data-aos="fade-up">
         <div className="prose prose-slate prose-lg max-w-none text-justify">
           <p className="text-slate-600 mb-8">
             Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}

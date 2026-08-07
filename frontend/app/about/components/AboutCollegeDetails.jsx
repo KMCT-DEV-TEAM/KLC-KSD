@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const AboutCollegeDetails = () => {
   return (
-    <section className="py-20 px-6 max-w-7xl mx-auto w-full bg-white">
+    <section className="py-20 px-6 max-w-7xl mx-auto w-full bg-white" data-aos="fade-up">
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
         {/* Left Side: Content */}
         <div className="space-y-6">

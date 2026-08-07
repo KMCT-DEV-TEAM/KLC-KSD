@@ -26,7 +26,7 @@ const Recognition = () => {
   ];
 
   return (
-    <section className="py-16 px-6">
+    <section className="py-16 px-6" data-aos="fade-up">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center space-y-12">
 
         {/* Heading */}

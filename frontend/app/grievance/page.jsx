@@ -11,7 +11,7 @@ export default function GrievancePage() {
   return (
     <div className="w-full min-h-screen bg-slate-50 pb-24">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[75vh] md:min-h-[85vh] flex items-center bg-slate-900 overflow-hidden">
+      <section className="relative w-full min-h-[75vh] md:min-h-[85vh] flex items-center bg-slate-900 overflow-hidden" data-aos="fade-up">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 w-full h-full">
           <Image
@@ -44,7 +44,7 @@ export default function GrievancePage() {
 
 
       {/* Overview Section */}
-      <section className="py-12 md:py-20 px-6 max-w-7xl mx-auto">
+      <section className="py-12 md:py-20 px-6 max-w-7xl mx-auto" data-aos="fade-up">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Left: Image */}
           <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-xl">

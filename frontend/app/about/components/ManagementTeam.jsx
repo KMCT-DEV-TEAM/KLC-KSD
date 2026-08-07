@@ -21,7 +21,7 @@ const ManagementTeam = () => {
   ];
 
   return (
-    <section className="w-full bg-slate-50 relative overflow-hidden py-24">
+    <section className="w-full bg-slate-50 relative overflow-hidden py-24" data-aos="fade-up">
       {/* Decorative accent background */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-slate-100/50 to-transparent pointer-events-none" />
 
