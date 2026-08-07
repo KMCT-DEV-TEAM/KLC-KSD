@@ -1,27 +1,109 @@
 import React from 'react';
 import Link from 'next/link';
-import { Scale } from 'lucide-react';
+import { Scale, MapPin, Phone, Mail, ChevronRight, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 border-t border-slate-800 py-12 px-6">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-xs text-slate-400">
-        <div className="flex items-center gap-3">
-          <div className="w-8 h-8 rounded-lg bg-[#005691] flex items-center justify-center text-white border border-[#0077c8]">
-            <Scale className="w-4 h-4" />
+    <footer className="bg-secondary text-slate-300 pt-20 pb-8 px-6 border-t-[6px] border-primary">
+      <div className="max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+          {/* About Section */}
+          <div className="space-y-6">
+            <div className="flex items-center gap-3">
+              <div className="w-10 h-10 rounded-lg bg-white/10 flex items-center justify-center text-white">
+                <Scale className="w-6 h-6" />
+              </div>
+              <span className="text-white text-xl font-bold tracking-wide font-serif">KMCT Law College</span>
+            </div>
+            <p className="text-sm leading-relaxed text-slate-400 text-justify">
+              Empowering the next generation of legal minds. We are committed to nurturing legal professionals equipped with profound knowledge, ethics, and a deep sense of responsibility towards society.
+            </p>
+            <div className="flex items-center gap-4 pt-2">
+              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <Facebook className="w-4 h-4" />
+              </a>
+              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <Twitter className="w-4 h-4" />
+              </a>
+              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <Instagram className="w-4 h-4" />
+              </a>
+              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <Linkedin className="w-4 h-4" />
+              </a>
+            </div>
           </div>
-          <span className="text-white font-semibold tracking-wide">KMCT College of Legal Studies (KLC-KSD)</span>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-white text-lg font-serif font-semibold mb-6">Quick Links</h3>
+            <ul className="space-y-3">
+              {[
+                { name: 'Home', path: '/' },
+                { name: 'About Us', path: '/about' },
+                { name: 'Admissions', path: '#' },
+                { name: 'Contact Us', path: '/contact' }
+              ].map((link, idx) => (
+                <li key={idx}>
+                  <Link href={link.path} className="text-sm text-slate-400 hover:text-white flex items-center gap-2 group transition-colors">
+                    <ChevronRight className="w-3 h-3 text-primary group-hover:translate-x-1 transition-transform" />
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Academics */}
+          <div>
+            <h3 className="text-white text-lg font-serif font-semibold mb-6">Academics</h3>
+            <ul className="space-y-3">
+              {[
+                'BA LLB (5 Years)',
+                'BBA LLB (5 Years)',
+              ].map((item, idx) => (
+                <li key={idx}>
+                  <a href="#" className="text-sm text-slate-400 hover:text-white flex items-center gap-2 group transition-colors">
+                    <ChevronRight className="w-3 h-3 text-primary group-hover:translate-x-1 transition-transform" />
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact Info */}
+          <div>
+            <h3 className="text-white text-lg font-serif font-semibold mb-6">Contact Us</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-primary shrink-0 mt-0.5" />
+                <span className="text-sm text-slate-400 leading-relaxed">
+                  KMCT Law College<br />
+                  Kuttippuram, Kasaragod<br />
+                  Kerala, India
+                </span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-primary shrink-0" />
+                <span className="text-sm text-slate-400">+91 123 456 7890</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <Mail className="w-5 h-5 text-primary shrink-0" />
+                <span className="text-sm text-slate-400">info@kmctlawcollege.edu.in</span>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div className="flex items-center gap-6 text-slate-400">
-          <Link href="/" className="hover:text-[#0077c8] transition-colors">Home</Link>
-          <Link href="/about" className="hover:text-[#0077c8] transition-colors">About</Link>
-          <Link href="/programs" className="hover:text-[#0077c8] transition-colors">Programs</Link>
-          <Link href="/admissions" className="hover:text-[#0077c8] transition-colors">Admissions</Link>
-          <Link href="/contact" className="hover:text-[#0077c8] transition-colors">Contact</Link>
+        {/* Footer Bottom */}
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+          <p>© {new Date().getFullYear()} KMCT College of Legal Studies. All rights reserved.</p>
+          <div className="flex gap-6">
+            <Link href="#" className="hover:text-white transition-colors">Privacy Policy</Link>
+            <Link href="#" className="hover:text-white transition-colors">Terms of Service</Link>
+          </div>
         </div>
-
-        <p>© {new Date().getFullYear()} KMCT College of Legal Studies. All rights reserved.</p>
       </div>
     </footer>
   );

@@ -59,13 +59,13 @@ export default function Navbar() {
       {/* Main Navbar */}
       <div className="bg-white/95 backdrop-blur-md text-slate-900 border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 md:px-8 h-24 flex items-center justify-between gap-4">
-          
+
           {/* Logo Section */}
           <Link href="/" className="flex items-center shrink-0">
-            <img 
-              src="/images/logo.png" 
-              alt="KMCT College of Legal Studies Logo" 
-              className="h-14 md:h-16 w-auto object-contain" 
+            <img
+              src="/images/logo.png"
+              alt="KMCT College of Legal Studies Logo"
+              className="h-14 md:h-16 w-auto object-contain"
             />
           </Link>
 
@@ -73,18 +73,16 @@ export default function Navbar() {
           <nav className="hidden xl:flex items-center gap-8 text-sm font-semibold">
             <Link
               href="/"
-              className={`transition-colors ${
-                pathname === '/' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
-              }`}
+              className={`transition-colors ${pathname === '/' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
+                }`}
             >
               Home
             </Link>
 
             <Link
               href="/about"
-              className={`transition-colors ${
-                pathname === '/about' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
-              }`}
+              className={`transition-colors ${pathname === '/about' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
+                }`}
             >
               About Us
             </Link>
@@ -92,9 +90,8 @@ export default function Navbar() {
             <div className="relative group py-2">
               <Link
                 href="/programs"
-                className={`flex items-center gap-1 transition-colors ${
-                  pathname === '/programs' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
-                }`}
+                className={`flex items-center gap-1 transition-colors ${pathname === '/programs' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
+                  }`}
               >
                 <span>Academics</span>
                 <ChevronDown className="w-3.5 h-3.5 group-hover:rotate-180 transition-transform" />
@@ -111,9 +108,8 @@ export default function Navbar() {
 
             <Link
               href="/grievance"
-              className={`transition-colors ${
-                pathname === '/grievance' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
-              }`}
+              className={`transition-colors ${pathname === '/grievance' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
+                }`}
             >
               Grievance
             </Link>
@@ -125,7 +121,7 @@ export default function Navbar() {
               href="/brochure"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-secondary hover:bg-primary text-white text-xs font-bold transition-all shadow-sm"
             >
-              <Download className="w-4 h-4" />
+              <Download className="w-4 h-4 bg-secondary" />
               <span>Download Brochure</span>
             </Link>
           </div>
