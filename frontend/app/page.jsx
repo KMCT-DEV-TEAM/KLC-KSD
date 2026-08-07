@@ -9,12 +9,12 @@ import Facilities from '../components/Facilities';
 export default function HomePage() {
   return (
     <div className="bg-white text-slate-900 min-h-screen">
-      <HeroSection />
+      {/* <HeroSection />
       <AboutCollege />
       <Affiliation />
       <ManagementDesk />
       <OurPrograms />
-      <Facilities />
+      <Facilities /> */}
     </div>
   );
 }
