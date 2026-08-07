@@ -48,23 +48,29 @@ const ManagementTeam = () => {
         {/* Team Cards Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {team.map((member, idx) => (
-            <div 
-              key={idx} 
-              className="group bg-white p-8 rounded-3xl border border-slate-100 shadow-xl shadow-slate-200/50 hover:shadow-primary/10 hover:border-primary/20 transition-all duration-300 flex flex-col items-center text-center cursor-pointer"
+            <div
+              key={idx}
+              className="group relative bg-white rounded-2xl overflow-hidden shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 flex flex-col border border-slate-100/50"
             >
-              <div className="w-36 h-36 mb-6 relative rounded-full overflow-hidden border-4 border-slate-50 group-hover:border-primary/20 transition-colors shadow-sm shrink-0">
+              {/* Full-width square image container */}
+              <div className="w-full aspect-square relative overflow-hidden bg-slate-100">
                 <Image
                   src={member.image}
                   alt={member.name}
                   fill
-                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                  className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
+                {/* Subtle gradient overlay at the bottom of the image for depth */}
+                <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              <div className="space-y-2 mt-auto">
-                <h3 className="text-xl font-bold text-slate-900 group-hover:text-primary transition-colors duration-300">
+              
+              {/* Text Content */}
+              <div className="p-6 bg-white relative z-10 flex flex-col items-center text-center">
+                <h3 className="text-xl font-extrabold text-slate-900 group-hover:text-primary transition-colors duration-300 mb-2">
                   {member.name}
                 </h3>
-                <p className="text-xs text-secondary font-bold uppercase tracking-wider">
+                <div className="w-6 h-px bg-secondary rounded-full mb-3 transition-all duration-500 group-hover:w-12 group-hover:bg-primary" />
+                <p className="text-sm text-slate-600 font-semibold uppercase tracking-wider">
                   {member.title}
                 </p>
               </div>

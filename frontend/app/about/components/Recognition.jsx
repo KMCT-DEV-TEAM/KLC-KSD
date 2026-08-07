@@ -4,44 +4,50 @@ import Image from 'next/image';
 const Recognition = () => {
   const logos = [
     {
-      name: "University of Calicut",
-      image: "/images/university of calicut.jpg"
-    },
-    {
       name: "Bar Council of India",
       image: "/images/bar council of india.svg"
     },
     {
-      name: "Department of Justice",
-      image: "/images/justice for all.jpg"
-    },
-    {
-      name: "National Service Scheme",
-      image: "/images/nss.jpg"
-    },
-    {
-      name: "IEDC",
-      image: "/images/innovation.jpg"
+      name: "University of Kannur",
+      image: "/images/kannur.png"
     }
   ];
 
   return (
-    <section className="py-16 px-6" data-aos="fade-up">
-      <div className="max-w-7xl mx-auto flex flex-col items-center text-center space-y-12">
+    <section className="py-16 px-6 relative bg-slate-50/50" data-aos="fade-up">
+      <div className="max-w-7xl mx-auto flex flex-col items-center">
 
-        {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-extrabold text-secondary leading-tight">
-          Recognition
-        </h2>
+        {/* Header Section */}
+        <div className="text-center space-y-4 mb-12">
+          <div className="flex items-center justify-center gap-4">
+            <span className="w-12 md:w-16 h-px bg-primary"></span>
+            <span className="text-sm font-bold text-primary uppercase tracking-widest">
+              Accreditation
+            </span>
+            <span className="w-12 md:w-16 h-px bg-primary"></span>
+          </div>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-secondary leading-tight">
+            Recognitions & Affiliations
+          </h2>
+        </div>
 
-        {/* Logos Container */}
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+        {/* Cards Container */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 max-w-4xl mx-auto w-full">
           {logos.map((logo, index) => (
             <div
               key={index}
-              className="bg-white p-4 rounded-xl shadow-sm border border-slate-100 flex items-center justify-center w-28 h-28 md:w-32 md:h-32 transition-transform hover:-translate-y-1"
+              className="group bg-white p-6 md:p-8 rounded-2xl shadow-lg shadow-slate-200/50 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 flex flex-row items-center justify-between gap-6 border border-slate-100"
             >
-              <div className="relative w-full h-full">
+              {/* Text on Left */}
+              <div className="flex-1 text-left">
+                <h3 className="text-lg md:text-xl font-bold text-slate-800 group-hover:text-primary transition-colors duration-300 mb-3">
+                  {logo.name}
+                </h3>
+                <div className="w-10 h-px bg-slate-200 rounded-full transition-all duration-500 group-hover:w-16 group-hover:bg-primary" />
+              </div>
+
+              {/* Image on Right */}
+              <div className="relative w-20 h-20 md:w-24 md:h-24 shrink-0 transition-transform duration-700 group-hover:scale-110">
                 <Image
                   src={logo.image}
                   alt={logo.name}

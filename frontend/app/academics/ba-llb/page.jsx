@@ -11,14 +11,14 @@ export default function BALLBPage() {
   return (
     <div className="w-full min-h-screen bg-white">
       {/* Hero Section */}
-      <ProgramHero 
-        badgeText="Academics" 
-        titleMain="BA LL.B" 
+      <ProgramHero
+        badgeText="Academics"
+        titleMain="BA LL.B"
         titleHighlight="(5 Years)"
         description="A five-year integrated degree program combining the study of arts and law, designed to build a strong foundation in humanities alongside rigorous legal training."
       />
-      
-      <ProgramDetails 
+
+      <ProgramDetails
         aboutText="The BA LL.B (5 Years) Program at KMCT Law College is designed for students who wish to pursue a career in law immediately after their higher secondary education. This dual-degree program provides students with a comprehensive understanding of both Bachelor of Arts (humanities) and Bachelor of Legislative Law subjects. The curriculum covers essential areas such as constitutional law, criminal law, contract law, family law, sociology, political science, and more, equipping students with the multifaceted knowledge and skills required to excel in the modern legal profession."
         eligibility={[
           "A passing grade in 10+2 (or equivalent) examination from a recognized Board.",
@@ -32,20 +32,7 @@ export default function BALLBPage() {
           { title: "Practical Learning", desc: "Students are vigorously encouraged to participate in moot court sessions, internships, legal aid clinics, and legal research projects to gain practical insights." },
           { title: "Elective Options", desc: "Students can choose from a specialized range of electives based on their specific interests and career goals in higher semesters." }
         ]}
-        syllabus={[
-          {
-            title: "I Semester",
-            subjects: ["English - I", "Political Science - I", "Sociology - I", "Law of Torts", "General Principles of Contract"]
-          },
-          {
-            title: "II Semester",
-            subjects: ["English - II", "Political Science - II", "Economics - I", "Special Contracts", "Constitutional Law - I"]
-          },
-          {
-            title: "III Semester",
-            subjects: ["Political Science - III", "Economics - II", "Family Law - I", "Constitutional Law - II", "Jurisprudence"]
-          }
-        ]}
+
       />
     </div>
   );
