@@ -3,8 +3,8 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Terms of Service | KMCT Law College',
-  description: 'Terms and Conditions for using the KMCT Law College website and services.',
+  title: 'Terms of Service | KMCT College of Legal Studies',
+  description: 'Terms and Conditions for using the KMCT College of Legal Studies website and services.',
 };
 
 export default function TermsConditionsPage() {
@@ -56,7 +56,7 @@ export default function TermsConditionsPage() {
 
           <h2 className="text-2xl font-bold text-slate-900 mb-4 mt-8">3. Intellectual Property Rights</h2>
           <p className="text-slate-600 mb-6">
-            This website contains material which is owned by or licensed to KMCT Law College. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.
+            This website contains material which is owned by or licensed to KMCT College of Legal Studies. This material includes, but is not limited to, the design, layout, look, appearance and graphics. Reproduction is prohibited other than in accordance with the copyright notice, which forms part of these terms and conditions.
           </p>
           <p className="text-slate-600 mb-6">
             All trademarks reproduced in this website, which are not the property of, or licensed to the operator, are acknowledged on the website.

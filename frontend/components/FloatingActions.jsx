@@ -8,13 +8,15 @@ export default function FloatingActions() {
   return (
     <div className="fixed right-0 top-1/3 z-50 flex flex-col items-end gap-1.5 font-sans">
       {/* Vertical Admissions Tab */}
-      <Link
-        href="/admissions"
+      <a
+        href="https://admissions.kmct.org/"
+        target="_blank"
+        rel="noopener noreferrer"
         className="bg-[#005691] hover:bg-[#004070] text-white text-xs font-bold px-3 py-4 rounded-r-lg shadow-xl tracking-wider uppercase transition-all flex items-center justify-center border-l-2 border-[#0077c8] hover:pr-4"
         style={{ writingMode: 'vertical-rl', transform: 'rotate(180deg)' }}
       >
         Admission 26-27
-      </Link>
+      </a>
 
       {/* Action Icon Buttons */}
       <div className="flex flex-col gap-1.5 shadow-2xl">

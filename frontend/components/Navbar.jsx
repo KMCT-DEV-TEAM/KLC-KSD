@@ -47,16 +47,16 @@ export default function Navbar() {
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
           {/* Social Icons */}
           <div className="flex items-center gap-4 text-blue-200">
-            <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
+            <a href="https://share.google/FMsk2pza879LuqXjz" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
               <Facebook className="w-3.5 h-3.5" />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
+            <a href="https://www.instagram.com/kmctgi/?hl=en" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
               <Instagram className="w-3.5 h-3.5" />
             </a>
-            <a href="https://x.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
+            <a href="https://share.google/xSpqwuwr2H4SaGuaN" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
               <Twitter className="w-3.5 h-3.5" />
             </a>
-            <a href="https://youtube.com" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
+            <a href="https://share.google/44eQBN11gkCcoMIdb" target="_blank" rel="noreferrer" className="hover:text-white transition-colors">
               <Youtube className="w-3.5 h-3.5" />
             </a>
           </div>
@@ -66,9 +66,6 @@ export default function Navbar() {
             <a href="https://admissions.kmct.org/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">
               Admissions
             </a>
-            <Link href="/faq" className="hover:text-white transition-colors">
-              FAQ
-            </Link>
             <Link href="/contact" className="hover:text-white transition-colors">
               Contact Us
             </Link>
@@ -117,11 +114,10 @@ export default function Navbar() {
                 <span>Academics</span>
                 <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-300 ${desktopAcademicsOpen ? 'rotate-180' : ''}`} />
               </button>
-              
-              <div 
-                className={`absolute top-full left-0 mt-0 w-40 bg-white border border-slate-100 shadow-xl rounded-lg flex flex-col overflow-hidden transition-all duration-300 origin-top ${
-                  desktopAcademicsOpen ? 'opacity-100 scale-y-100 visible' : 'opacity-0 scale-y-0 invisible'
-                }`}
+
+              <div
+                className={`absolute top-full left-0 mt-0 w-40 bg-white border border-slate-100 shadow-xl rounded-lg flex flex-col overflow-hidden transition-all duration-300 origin-top ${desktopAcademicsOpen ? 'opacity-100 scale-y-100 visible' : 'opacity-0 scale-y-0 invisible'
+                  }`}
               >
                 <Link href="/academics/ba-llb" className="px-4 py-3 text-sm font-medium text-slate-700 hover:text-[#0077c8] hover:bg-slate-50 transition-colors">
                   BA LLB
@@ -162,36 +158,34 @@ export default function Navbar() {
       </div>
 
       {/* Mobile Drawer Navigation */}
-      <div 
-        className={`xl:hidden bg-white text-slate-900 px-6 py-6 border-b border-slate-200 shadow-lg absolute w-full left-0 transition-all duration-300 origin-top overflow-hidden ${
-          mobileMenuOpen ? 'max-h-[500px] opacity-100 visible' : 'max-h-0 opacity-0 invisible py-0 border-transparent shadow-none'
-        }`}
+      <div
+        className={`xl:hidden bg-white text-slate-900 px-6 py-6 border-b border-slate-200 shadow-lg absolute w-full left-0 transition-all duration-300 origin-top overflow-hidden ${mobileMenuOpen ? 'max-h-[500px] opacity-100 visible' : 'max-h-0 opacity-0 invisible py-0 border-transparent shadow-none'
+          }`}
       >
         <div className="space-y-4">
           <nav className="flex flex-col gap-4 font-medium text-sm">
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className={`transition-colors ${pathname === '/' ? 'text-[#0077c8]' : 'hover:text-[#0077c8]'}`}>Home</Link>
             <Link href="/about" onClick={() => setMobileMenuOpen(false)} className={`transition-colors ${pathname === '/about' ? 'text-[#0077c8]' : 'hover:text-[#0077c8]'}`}>About Us</Link>
-            
+
             {/* Mobile Academics Toggle */}
             <div className="flex flex-col gap-3">
-              <button 
+              <button
                 onClick={() => setMobileAcademicsOpen(!mobileAcademicsOpen)}
                 className="flex items-center justify-between text-slate-700 font-medium focus:outline-none"
               >
                 <span className={pathname.startsWith('/academics') ? 'text-[#0077c8]' : ''}>Academics</span>
                 <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${mobileAcademicsOpen ? 'rotate-180' : ''}`} />
               </button>
-              
-              <div 
-                className={`pl-4 flex flex-col gap-3 border-l-2 border-slate-100 ml-1 overflow-hidden transition-all duration-300 ${
-                  mobileAcademicsOpen ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
-                }`}
+
+              <div
+                className={`pl-4 flex flex-col gap-3 border-l-2 border-slate-100 ml-1 overflow-hidden transition-all duration-300 ${mobileAcademicsOpen ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
+                  }`}
               >
                 <Link href="/academics/ba-llb" onClick={() => setMobileMenuOpen(false)} className={`transition-colors ${pathname === '/academics/ba-llb' ? 'text-[#0077c8]' : 'text-slate-600 hover:text-[#0077c8]'}`}>BA LLB</Link>
                 <Link href="/academics/llb" onClick={() => setMobileMenuOpen(false)} className={`transition-colors ${pathname === '/academics/llb' ? 'text-[#0077c8]' : 'text-slate-600 hover:text-[#0077c8]'}`}>LLB</Link>
               </div>
             </div>
-            
+
             <Link href="/grievance" onClick={() => setMobileMenuOpen(false)} className={`transition-colors ${pathname === '/grievance' ? 'text-[#0077c8]' : 'hover:text-[#0077c8]'}`}>Grievance</Link>
           </nav>
 

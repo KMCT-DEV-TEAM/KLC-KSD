@@ -38,12 +38,14 @@ export default function HeroSection() {
 
           {/* Action Buttons */}
           <div className="flex items-center gap-4 !mt-1">
-            <Link
-              href="/admissions"
+            <a
+              href="https://admissions.kmct.org/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-primary hover:bg-primary/90 text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:shadow-xl transition-all hover:-translate-y-0.5"
             >
               Apply Now
-            </Link>
+            </a>
             <Link
               href="/about"
               className="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold py-3 px-8 rounded-lg backdrop-blur-sm transition-all hover:-translate-y-0.5"
