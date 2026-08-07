@@ -63,7 +63,7 @@ export default function GrievancePage() {
             </h2>
             <div className="text-slate-600 leading-relaxed space-y-4">
               <p>
-                The Grievance Redressal Committee (GRC) at KMCT Law College is a body formed to address and resolve grievances or complaints raised by students, faculty, or other stakeholders associated with the institution.
+                The Grievance Redressal Committee (GRC) at KMCT College of Legal Studies is a body formed to address and resolve grievances or complaints raised by students, faculty, or other stakeholders associated with the institution.
               </p>
               <p>
                 Its primary goal is to maintain a harmonious, fair, and transparent educational environment by providing a secure platform where individuals can express their concerns without fear of retaliation. We ensure that every grievance is heard, evaluated impartially, and resolved promptly according to our institutional guidelines.
@@ -78,13 +78,6 @@ export default function GrievancePage() {
         <GrievanceForm />
       </div>
 
-      {/* Information text below form */}
-      <div className="max-w-4xl mx-auto px-6 mt-12 text-center space-y-4">
-        <h3 className="text-xl font-bold text-slate-900">Need Immediate Assistance?</h3>
-        <p className="text-slate-600">
-          If your grievance requires urgent attention or if you face any issues while submitting this form, please contact our administrative office directly at <a href="tel:+914942123223" className="text-primary font-semibold hover:underline">+91 494 2123223</a> or email us at <a href="mailto:lawcollege@kmct.edu.in" className="text-primary font-semibold hover:underline">lawcollege@kmct.edu.in</a>.
-        </p>
-      </div>
     </div>
   );
 }

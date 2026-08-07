@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { Scale, MapPin, Phone, Mail, ChevronRight, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
+import { Scale, MapPin, Phone, Mail, ChevronRight, Facebook, Twitter, Instagram, Youtube } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -20,17 +20,17 @@ export default function Footer() {
               Empowering the next generation of legal minds. We are committed to nurturing legal professionals equipped with profound knowledge, ethics, and a deep sense of responsibility towards society.
             </p>
             <div className="flex items-center gap-4">
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+              <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                 <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+              <a href="https://x.com/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                 <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
                 <Instagram className="w-4 h-4" />
               </a>
-              <a href="#" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
-                <Linkedin className="w-4 h-4" />
+              <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center hover:bg-primary hover:text-white transition-colors">
+                <Youtube className="w-4 h-4" />
               </a>
             </div>
           </div>
@@ -94,11 +94,15 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-primary shrink-0" />
-                <span className="text-sm text-slate-400">+91 123 456 7890</span>
+                <a href="https://wa.me/918086634000" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  +91 80866 34000
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-primary shrink-0" />
-                <span className="text-sm text-slate-400">info@kmctlawcollege.edu.in</span>
+                <a href="mailto:kmctcls@kmct.org" className="text-sm text-slate-400 hover:text-white transition-colors">
+                  kmctcls@kmct.org
+                </a>
               </li>
             </ul>
           </div>
