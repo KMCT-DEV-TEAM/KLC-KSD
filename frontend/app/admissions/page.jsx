@@ -1,9 +1,5 @@
 'use client';
 
-import React from 'react';
-import AdmissionForm from './components/AdmissionForm';
-import AdmissionInfo from './components/AdmissionInfo';
-
 export default function AdmissionsPage() {
   return (
     <div className="py-16 px-6 max-w-7xl mx-auto space-y-16">
@@ -17,11 +13,6 @@ export default function AdmissionsPage() {
         <p className="text-slate-400 text-lg">
           Begin your legal career journey. Submit your application online or contact our admissions office.
         </p>
-      </div>
-
-      <div className="grid lg:grid-cols-3 gap-8">
-        <AdmissionForm />
-        <AdmissionInfo />
       </div>
     </div>
   );
