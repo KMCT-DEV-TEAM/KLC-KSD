@@ -10,16 +10,15 @@ export default function AboutCollege() {
         <div className="relative" data-aos="fade-right">
           <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10 border border-slate-200 relative z-10">
             <img
-              src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1200&auto=format&fit=crop"
+              src="/images/img2.jpeg"
               alt="KMCT College of Legal Studies Campus"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-transparent to-transparent" />
           </div>
 
           <div className="absolute -bottom-10 -right-10 w-2/3 aspect-square rounded-3xl overflow-hidden shadow-xl border-4 border-white z-20">
             <img
-              src="https://images.unsplash.com/photo-1521791055366-0d553872125f?q=80&w=800&auto=format&fit=crop"
+              src="/images/img1.jpeg"
               alt="Law Students"
               className="w-full h-full object-cover"
             />

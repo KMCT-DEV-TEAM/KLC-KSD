@@ -8,13 +8,15 @@ export default function OurPrograms() {
       title: '5-Year BA LL.B (Hons)',
       desc: 'An integrated undergraduate program combining liberal arts and comprehensive legal studies for 12th graduates.',
       icon: BookOpen,
-      badge: 'Integrated Course'
+      badge: 'Integrated Course',
+      link: '/academics/ba-llb'
     },
     {
       title: '3-Year LL.B',
       desc: 'Intensive law degree designed for graduates aiming to enter litigation, judicial services, or corporate law.',
       icon: GraduationCap,
-      badge: 'Post-Graduate'
+      badge: 'Under-Graduate',
+      link: '/academics/llb'
     }
   ];
 
@@ -63,7 +65,7 @@ export default function OurPrograms() {
                 </div>
 
                 <div className="pt-6 mt-6 border-t border-slate-100 flex items-center text-xs font-semibold text-secondary group-hover:text-primary gap-2">
-                  <Link href="/programs" className="flex items-center gap-1">
+                  <Link href={prog.link} className="flex items-center gap-1">
                     View Curriculum <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                   </Link>
                 </div>

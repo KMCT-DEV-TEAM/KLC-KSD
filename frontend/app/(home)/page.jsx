@@ -14,7 +14,7 @@ export default function HomePage() {
       <Affiliation />
       <ManagementDesk />
       <OurPrograms />
-      <Facilities />
+      {/* <Facilities /> */}
     </div>
   );
 }
