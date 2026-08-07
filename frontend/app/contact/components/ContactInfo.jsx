@@ -12,12 +12,20 @@ export default function ContactInfo() {
     { 
       icon: Phone, 
       title: 'Phone Number', 
-      text: '+91 494 2123223 / +91 94000 12345' 
+      text: (
+        <a href="https://wa.me/918086634000" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+          +91 80866 34000
+        </a>
+      )
     },
     { 
       icon: Mail, 
       title: 'Email Address', 
-      text: 'lawcollege@kmct.edu.in' 
+      text: (
+        <a href="mailto:kmctcls@kmct.org" className="hover:text-primary transition-colors">
+          kmctcls@kmct.org
+        </a>
+      )
     },
     { 
       icon: Clock, 

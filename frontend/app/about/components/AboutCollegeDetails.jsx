@@ -14,7 +14,7 @@ const AboutCollegeDetails = () => {
                 About
               </span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-secondary leading-tight">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-secondary space-y-2">
               KMCT Law College
             </h2>
           </div>
