@@ -22,8 +22,8 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full font-sans shadow-md">
-      {/* Top Bar (Deep Blue) */}
-      <div className="bg-[#005691] text-white text-xs py-2">
+      {/* Top Bar (Primary) */}
+      <div className="bg-primary text-white text-xs py-2">
         <div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
           {/* Social Icons */}
           <div className="flex items-center gap-4 text-blue-200">
@@ -123,7 +123,7 @@ export default function Navbar() {
           <div className="hidden lg:flex items-center gap-3 shrink-0">
             <Link
               href="/brochure"
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-[#005691] hover:bg-[#004070] text-white text-xs font-bold transition-all shadow-sm"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-secondary hover:bg-primary text-white text-xs font-bold transition-all shadow-sm"
             >
               <Download className="w-4 h-4" />
               <span>Download Brochure</span>
@@ -160,7 +160,7 @@ export default function Navbar() {
             <Link
               href="/brochure"
               onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-3 rounded bg-[#005691] hover:bg-[#004070] text-white text-sm font-bold flex items-center justify-center gap-2 transition-all"
+              className="w-full text-center py-3 rounded bg-secondary hover:bg-primary text-white text-sm font-bold flex items-center justify-center gap-2 transition-all"
             >
               <Download className="w-4 h-4" /> Download Brochure
             </Link>

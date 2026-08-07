@@ -2,6 +2,13 @@
 
 @theme {
   --color-primary: #046CB5;
+  --color-secondary: #002b4d;
+  --animate-marquee: marquee 25s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(100vw); }
+    100% { transform: translateX(-100%); }
+  }
 }
 
 @layer base {
