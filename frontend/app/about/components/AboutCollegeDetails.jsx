@@ -7,20 +7,23 @@ const AboutCollegeDetails = () => {
       <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-start">
         {/* Left Side: Content */}
         <div className="space-y-6">
-          <div className="space-y-2">
-            <span className="text-sm font-semibold text-primary/50 tracking-widest uppercase">
-              About
-            </span>
-            <h2 className="text-4xl md:text-5xl font-serif font-medium text-primary">
+          <div className="space-y-4">
+            <div className="flex items-center gap-4">
+              <span className="w-12 md:w-16 h-px bg-primary"></span>
+              <span className="text-sm font-bold text-primary tracking-widest uppercase">
+                About
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-extrabold text-secondary leading-tight">
               KMCT Law College
             </h2>
           </div>
 
-          <p className="text-lg font-medium text-slate-800 leading-relaxed">
-            KMCT Law college, Kuttippuram is a self-financing law college established in the year 2013
+          <p className="text-base font-medium text-slate-800 leading-relaxed">
+            Since its establishment, KMCT Law College has rapidly emerged as a center for legal excellence. Our institution is dedicated to offering rigorous academic training combined with practical exposure to the legal system.
           </p>
 
-          <div className="space-y-6 text-sm text-slate-600 leading-relaxed text-justify">
+          <div className="space-y-6 text-base text-slate-600 leading-relaxed text-justify">
             <p>
               KMCT Law college, Kuttippuram is a self-financing law college established in the year 2013 and has set a bench mark for quality legal education in the State of Kerala. The objective of the institution focused on imparting legal education to all sects of the society. The institution was built on strong foundation and has maintained its reputation as a fine institution for legal education over a period of time.
             </p>

@@ -22,7 +22,7 @@ export default function GrievanceForm() {
         <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
           <Send className="w-8 h-8" />
         </div>
-        <h3 className="text-2xl font-serif font-bold text-green-900 mb-2">Grievance Submitted!</h3>
+        <h3 className="text-2xl font-bold text-green-900 mb-2">Grievance Submitted!</h3>
         <p className="text-green-700">Thank you for bringing this to our attention. Our cell will review your grievance and contact you shortly.</p>
         <button 
           onClick={() => setSubmitted(false)}
@@ -37,7 +37,7 @@ export default function GrievanceForm() {
   return (
     <div className="bg-white p-8 md:p-12 rounded-2xl shadow-xl border border-slate-100 max-w-6xl mx-auto">
       <div className="text-center mb-10">
-        <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900">Grievance Redressal Form</h2>
+        <h2 className="text-3xl md:text-4xl font-extrabold text-secondary">Grievance Redressal Form</h2>
       </div>
       
       <form onSubmit={handleSubmit} className="space-y-6">

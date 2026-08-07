@@ -27,7 +27,7 @@ export default function ManagementDesk() {
     <section className="py-24 px-6 bg-slate-50 relative overflow-hidden">
       {/* Background accents */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-[100px]" />
-      
+
       <div className="max-w-7xl mx-auto space-y-16 relative z-10">
         <div className="text-center space-y-4 max-w-2xl mx-auto">
           <div className="flex items-center justify-center gap-4">
@@ -37,21 +37,21 @@ export default function ManagementDesk() {
             </span>
             <span className="w-12 md:w-16 h-px bg-primary"></span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-slate-900 tracking-tight">Management Desk</h2>
+          <h2 className="text-3xl md:text-5xl font-bold text-secondary tracking-tight">Management Desk</h2>
           <p className="text-slate-600 text-sm">Guided by visionaries dedicated to educational excellence and social progress.</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {profiles.map((profile, idx) => (
-            <div 
-              key={idx} 
+            <div
+              key={idx}
               className="group bg-white border border-slate-200 rounded-3xl p-8 hover:border-secondary hover:shadow-xl transition-all duration-300"
             >
               <div className="flex flex-col gap-6 items-center text-center">
                 <div className="w-28 h-28 shrink-0 rounded-full overflow-hidden border-2 border-slate-100 group-hover:border-primary transition-colors shadow-md">
-                  <img 
-                    src={profile.image} 
-                    alt={profile.name} 
+                  <img
+                    src={profile.image}
+                    alt={profile.name}
                     className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
                 </div>

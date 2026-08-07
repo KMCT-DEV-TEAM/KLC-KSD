@@ -18,7 +18,7 @@ const ProgramDetails = ({ aboutText, eligibility, duration, features, syllabus }
       {/* About Programme */}
       <div className="space-y-12">
         <div>
-          <h2 className="text-3xl md:text-4xl font-serif text-primary mb-6">About Programme</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-secondary mb-6">About Programme</h2>
           <p className="text-slate-600 leading-relaxed text-justify">
             {aboutText}
           </p>
@@ -66,7 +66,7 @@ const ProgramDetails = ({ aboutText, eligibility, duration, features, syllabus }
 
         {/* Syllabus Section */}
         <div className="pt-8">
-          <h2 className="text-3xl md:text-4xl font-serif text-primary mb-8 border-b border-slate-200 pb-4">Syllabus</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-secondary mb-8 border-b border-slate-200 pb-4">Syllabus</h2>
           
           <div className="space-y-4">
             {syllabus.map((semester, idx) => (
@@ -78,7 +78,7 @@ const ProgramDetails = ({ aboutText, eligibility, duration, features, syllabus }
                   onClick={() => toggleSemester(idx)}
                   className="w-full px-6 py-4 flex items-center justify-between text-left focus:outline-none"
                 >
-                  <h3 className="text-xl font-serif font-medium text-slate-800">
+                  <h3 className="text-xl font-bold text-slate-800">
                     {semester.title}
                   </h3>
                   <div className={`w-8 h-8 rounded-full flex items-center justify-center transition-colors ${openSemester === idx ? 'bg-primary text-white' : 'bg-slate-100 text-slate-500'}`}>

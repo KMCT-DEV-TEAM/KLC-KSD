@@ -58,7 +58,7 @@ export default function GrievancePage() {
 
           {/* Right: Text Content */}
           <div className="space-y-6">
-            <h2 className="text-3xl md:text-4xl font-serif font-bold text-slate-900">
+            <h2 className="text-3xl md:text-4xl font-extrabold text-secondary">
               Overview of Grievance Redressal
             </h2>
             <div className="text-slate-600 leading-relaxed space-y-4">
@@ -80,7 +80,7 @@ export default function GrievancePage() {
 
       {/* Information text below form */}
       <div className="max-w-4xl mx-auto px-6 mt-12 text-center space-y-4">
-        <h3 className="text-xl font-serif font-bold text-slate-900">Need Immediate Assistance?</h3>
+        <h3 className="text-xl font-bold text-slate-900">Need Immediate Assistance?</h3>
         <p className="text-slate-600">
           If your grievance requires urgent attention or if you face any issues while submitting this form, please contact our administrative office directly at <a href="tel:+914942123223" className="text-primary font-semibold hover:underline">+91 494 2123223</a> or email us at <a href="mailto:lawcollege@kmct.edu.in" className="text-primary font-semibold hover:underline">lawcollege@kmct.edu.in</a>.
         </p>

@@ -88,14 +88,13 @@ export default function Navbar() {
             </Link>
 
             <div className="relative group py-2">
-              <Link
-                href="/programs"
-                className={`flex items-center gap-1 transition-colors ${pathname === '/programs' ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
+              <span
+                className={`flex items-center gap-1 cursor-pointer transition-colors ${pathname.startsWith('/academics') ? 'text-[#0077c8]' : 'text-slate-700 hover:text-[#0077c8]'
                   }`}
               >
                 <span>Academics</span>
                 <ChevronDown className="w-3.5 h-3.5 group-hover:rotate-180 transition-transform" />
-              </Link>
+              </span>
               <div className="absolute top-full left-0 mt-0 w-40 bg-white border border-slate-100 shadow-xl rounded-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 flex flex-col overflow-hidden">
                 <Link href="/academics/ba-llb" className="px-4 py-3 text-sm font-medium text-slate-700 hover:text-[#0077c8] hover:bg-slate-50 transition-colors">
                   BA LLB
@@ -143,7 +142,7 @@ export default function Navbar() {
             <Link href="/" onClick={() => setMobileMenuOpen(false)} className="text-[#0077c8]">Home</Link>
             <Link href="/about" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#0077c8]">About Us</Link>
             <div className="flex flex-col gap-3">
-              <Link href="/programs" onClick={() => setMobileMenuOpen(false)} className="hover:text-[#0077c8]">Academics</Link>
+              <span className="text-slate-700 font-medium">Academics</span>
               <div className="pl-4 flex flex-col gap-3 border-l-2 border-slate-100 ml-1">
                 <Link href="/academics/ba-llb" onClick={() => setMobileMenuOpen(false)} className="text-slate-600 hover:text-[#0077c8]">BA LLB</Link>
                 <Link href="/academics/llb" onClick={() => setMobileMenuOpen(false)} className="text-slate-600 hover:text-[#0077c8]">LLB</Link>

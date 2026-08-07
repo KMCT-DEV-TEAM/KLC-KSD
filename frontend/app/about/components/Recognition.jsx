@@ -30,7 +30,7 @@ const Recognition = () => {
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center space-y-12">
 
         {/* Heading */}
-        <h2 className="text-3xl md:text-4xl font-serif text-primary">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-secondary leading-tight">
           Recognition
         </h2>
 
