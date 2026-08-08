@@ -8,7 +8,7 @@ export default function AboutCollege() {
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
         {/* Left Side: Images */}
         <div className="relative" data-aos="fade-right">
-          <div className="aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10 border border-slate-200 relative z-10">
+          <div className="w-11/12 md:w-[85%] aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10 border border-slate-200 relative z-10">
             <img
               src="/images/img2.jpeg"
               alt="KMCT College of Legal Studies Campus"
@@ -16,7 +16,7 @@ export default function AboutCollege() {
             />
           </div>
 
-          <div className="absolute -bottom-10 -right-10 w-2/3 aspect-square rounded-3xl overflow-hidden shadow-xl border-4 border-white z-20">
+          <div className="absolute -bottom-6 right-0 lg:-bottom-10 lg:-right-10 w-2/3 aspect-square rounded-3xl overflow-hidden shadow-xl border-4 border-white z-20">
             <img
               src="/images/img1.jpeg"
               alt="Law Students"

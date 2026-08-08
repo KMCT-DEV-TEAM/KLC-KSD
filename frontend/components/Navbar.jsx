@@ -161,7 +161,7 @@ export default function Navbar() {
 
       {/* Mobile Drawer Navigation */}
       <div
-        className={`xl:hidden bg-white text-slate-900 px-6 py-6 border-b border-slate-200 shadow-lg absolute w-full left-0 transition-all duration-300 origin-top overflow-hidden ${mobileMenuOpen ? 'max-h-[500px] opacity-100 visible' : 'max-h-0 opacity-0 invisible py-0 border-transparent shadow-none'
+        className={`xl:hidden bg-white text-slate-900 px-6 py-6 border-b border-slate-200 shadow-lg absolute w-full left-0 top-full z-50 transition-all duration-300 origin-top overflow-hidden ${mobileMenuOpen ? 'max-h-[500px] opacity-100 visible' : 'max-h-0 opacity-0 invisible py-0 border-transparent shadow-none'
           }`}
       >
         <div className="space-y-4">
