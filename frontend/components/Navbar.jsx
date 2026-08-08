@@ -145,7 +145,6 @@ export default function Navbar() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-secondary hover:bg-primary text-white text-xs font-bold transition-all shadow-sm"
             >
-              <Download className="w-4 h-4 hover:bg-primary" />
               <span>Apply Now</span>
             </a>
           </div>
