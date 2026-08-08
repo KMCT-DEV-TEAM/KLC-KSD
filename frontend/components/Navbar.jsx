@@ -139,12 +139,15 @@ export default function Navbar() {
 
           {/* Action Buttons (Right) */}
           <div className="hidden lg:flex items-center gap-3 shrink-0">
-            <div
-              className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-secondary hover:bg-primary text-white text-xs font-bold transition-all shadow-sm cursor-default"
+            <a
+              href="https://admissions.kmct.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-5 py-2.5 rounded bg-secondary hover:bg-primary text-white text-xs font-bold transition-all shadow-sm"
             >
               <Download className="w-4 h-4 hover:bg-primary" />
-              <span>Download Brochure</span>
-            </div>
+              <span>Apply Now</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -190,11 +193,15 @@ export default function Navbar() {
           </nav>
 
           <div className="pt-6 border-t border-slate-100 flex flex-col gap-3">
-            <div
-              className="w-full text-center py-3 rounded bg-secondary hover:bg-primary text-white text-sm font-bold flex items-center justify-center gap-2 transition-all cursor-default"
+            <a
+              href="https://admissions.kmct.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setMobileMenuOpen(false)}
+              className="w-full text-center py-3 rounded bg-secondary hover:bg-primary text-white text-sm font-bold flex items-center justify-center gap-2 transition-all"
             >
-              <Download className="w-4 h-4" /> Download Brochure
-            </div>
+              <Download className="w-4 h-4" /> Apply Now
+            </a>
           </div>
         </div>
       </div>
