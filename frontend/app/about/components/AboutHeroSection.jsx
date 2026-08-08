@@ -8,7 +8,7 @@ const AboutHeroSection = () => {
       <div className="absolute inset-0 w-full h-full">
         <Image
           src="/images/hero-bg.png"
-          alt="About KMCT Law College"
+          alt="About KMCT College of Legal Studies"
           fill
           priority
           className="object-cover opacity-40"
@@ -28,7 +28,7 @@ const AboutHeroSection = () => {
             <span className="text-primary">Ethics & Brilliance</span>
           </h1>
           <p className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-xl">
-            KMCT Law College Kasaragod was established to deliver exemplary legal education, fostering judicial values, advocacy skills, and social responsibility for a better tomorrow.
+            KMCT College of Legal Studies Kasaragod was established to deliver exemplary legal education, fostering judicial values, advocacy skills, and social responsibility for a better tomorrow.
           </p>
         </div>
       </div>

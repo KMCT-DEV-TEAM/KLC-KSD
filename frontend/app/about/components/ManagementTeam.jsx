@@ -5,7 +5,7 @@ const ManagementTeam = () => {
   const team = [
     {
       name: 'Dr. K Moidu',
-      title: 'Chairman',
+      title: 'Founder Chairman',
       image: '/images/Founder - Dr K Moidu.jpg.jpeg',
     },
     {
@@ -41,7 +41,7 @@ const ManagementTeam = () => {
             </h2>
           </div>
           <p className="text-base text-slate-600 leading-relaxed">
-            The management team of KMCT Group of Institutions is led by prominent figures dedicated to fostering excellence in education and providing quality services. The strategic growth of KMCT Law College is closely monitored and guided by this eminent team, fulfilling its mission of delivering top-quality education across various disciplines.
+            The management team of KMCT Group of Institutions is led by prominent figures dedicated to fostering excellence in education and providing quality services. The strategic growth of KMCT College of Legal Studies is closely monitored and guided by this eminent team, fulfilling its mission of delivering top-quality education across various disciplines.
           </p>
         </div>
 
@@ -63,7 +63,7 @@ const ManagementTeam = () => {
                 {/* Subtle gradient overlay at the bottom of the image for depth */}
                 <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              
+
               {/* Text Content */}
               <div className="p-6 bg-white relative z-10 flex flex-col items-center text-center">
                 <h3 className="text-xl font-extrabold text-slate-900 group-hover:text-primary transition-colors duration-300 mb-2">

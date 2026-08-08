@@ -2,8 +2,8 @@ import React from 'react';
 import ContactInfo from './components/ContactInfo';
 
 export const metadata = {
-  title: 'Contact Us | KMCT Law College Kasaragod',
-  description: 'Get in touch with KMCT Law College Kasaragod office. Find our address, phone number, and location on the map.',
+  title: 'Contact Us | KMCT College of Legal Studies Kasaragod',
+  description: 'Get in touch with KMCT College of Legal Studies Kasaragod office. Find our address, phone number, and location on the map.',
 };
 
 import Image from 'next/image';
@@ -17,7 +17,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 w-full h-full">
           <Image
             src="/images/hero-bg.png"
-            alt="Contact KMCT Law College"
+            alt="Contact KMCT College of Legal Studies"
             fill
             priority
             className="object-cover opacity-40 transition-all duration-700 scale-105"
@@ -34,7 +34,7 @@ export default function ContactPage() {
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
               Contact KMCT <br className="hidden md:block" />
-              <span className="text-primary">Law College</span>
+              <span className="text-primary">College of Legal Studies</span>
             </h1>
             <p className="text-lg md:text-xl text-slate-300 leading-relaxed max-w-xl">
               We are here to assist you with course inquiries, admissions, and campus visits. Reach out to us through any of the channels below.

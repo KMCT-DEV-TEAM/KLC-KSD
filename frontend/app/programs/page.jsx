@@ -3,8 +3,8 @@ import BALLBProgram from './components/BALLBProgram';
 import LLBProgram from './components/LLBProgram';
 
 export const metadata = {
-  title: 'Academic Programs | KMCT Law College',
-  description: 'Explore 5-Year BA LL.B (Hons) and 3-Year LL.B programs at KMCT Law College.',
+  title: 'Academic Programs | KMCT College of Legal Studies',
+  description: 'Explore 5-Year BA LL.B (Hons) and 3-Year LL.B programs at KMCT College of Legal Studies.',
 };
 
 export default function ProgramsPage() {
