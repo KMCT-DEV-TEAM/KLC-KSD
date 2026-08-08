@@ -11,7 +11,7 @@ export default function GrievancePage() {
   return (
     <div className="w-full min-h-screen bg-slate-50 pb-24">
       {/* Hero Section */}
-      <section className="relative w-full min-h-[80vh] md:min-h-[85vh] flex items-center pt-32 pb-16 md:pt-0 md:pb-0 bg-slate-900 overflow-hidden" data-aos="fade-up">
+      <section className="relative w-full min-h-[80vh] md:min-h-screen flex items-center pt-32 pb-16 md:pt-0 md:pb-0 bg-slate-900 overflow-hidden" data-aos="fade-up">
         {/* Background Image with Overlay */}
         <div className="absolute inset-0 w-full h-full">
           <Image
