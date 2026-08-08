@@ -6,7 +6,7 @@ import { Newspaper, Phone, Mail, MapPin, MessageCircle } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <div className="relative w-full min-h-[85vh] flex flex-col justify-between bg-slate-900 overflow-hidden">
+    <div className="relative w-full min-h-[85vh] md:min-h-screen flex flex-col justify-between bg-slate-900 overflow-hidden">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 w-full h-full">
         <div
