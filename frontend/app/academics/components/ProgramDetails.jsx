@@ -33,7 +33,7 @@ const ProgramDetails = ({ aboutText, eligibility, duration, features }) => {
           <ul className="space-y-3">
             {eligibility.map((item, idx) => (
               <li key={idx} className="flex items-start gap-3">
-                <div className="mt-1 w-1.5 h-1.5 rounded-full bg-primary shrink-0" />
+                <div className="w-1.5 h-1.5 rounded-full bg-primary shrink-0 mt-2" />
                 <span className="text-slate-600 leading-relaxed">{item}</span>
               </li>
             ))}
