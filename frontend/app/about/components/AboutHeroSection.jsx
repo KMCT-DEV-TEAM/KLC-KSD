@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const AboutHeroSection = () => {
   return (
-    <section className="relative w-full h-[70vh] md:h-[85vh] flex items-center pt-16 md:pt-0 bg-slate-900" data-aos="fade-up">
+    <section className="relative w-full min-h-[80vh] md:min-h-[85vh] flex items-center pt-32 pb-16 md:pt-0 md:pb-0 bg-slate-900" data-aos="fade-up">
       {/* Background Image */}
       <div className="absolute inset-0 w-full h-full">
         <Image
