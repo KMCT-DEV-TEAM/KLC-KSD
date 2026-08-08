@@ -64,17 +64,13 @@ export default function HeroSection() {
           <span className="whitespace-nowrap">Flash News</span>
         </div>
 
-        {/* Ticker Content (min-w-0 prevents flex items from overflowing parent container) */}
-        <div className="flex-1 min-w-0 py-2.5 sm:py-3 px-3 sm:px-6 overflow-hidden flex items-center bg-secondary">
-          <div className="animate-marquee whitespace-nowrap flex items-center gap-8 text-blue-100 font-medium">
-            <div className="flex items-center gap-3">
-              <span className="w-2 h-2 rounded-full bg-[#0077c8] inline-block animate-pulse shrink-0" />
-              <span>Admissions are now open for 2026–27 – Apply Today! Call: 8113064000 | Visit: https://admissions.kmct.org/</span>
-            </div>
-            <div className="flex items-center gap-3">
-              <span className="w-2 h-2 rounded-full bg-[#0077c8] inline-block animate-pulse shrink-0" />
-              <span>Admissions are now open for 2026–27 – Apply Today! Call: 8113064000 | Visit: https://admissions.kmct.org/</span>
-            </div>
+
+        {/* Ticker Content */}
+        <div className="flex-1 py-3 px-6 overflow-hidden flex items-center bg-secondary">
+          <div className="animate-marquee whitespace-nowrap flex items-center gap-3 text-blue-100 font-medium">
+            <span className="w-2 h-2 rounded-full bg-[#0077c8] inline-block animate-pulse" />
+            <span>KMCT College of Legal Studies offers 5 Year B.A. LL.B. (Hons.) and 3-Year LL.B. programmes for aspiring legal professionals</span>
+
           </div>
         </div>
       </div>

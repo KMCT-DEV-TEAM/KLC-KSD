@@ -33,7 +33,7 @@ export default function OurPrograms() {
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">Our Programs</h2>
           <p className="text-slate-600 text-sm">
-            Distinguished law degree curricula crafted to nurture analytical thinking and advocacy skills.
+            Distinguished law degree curriculum crafted to nurture analytical thinking and advocacy skills.
           </p>
         </div>
 
