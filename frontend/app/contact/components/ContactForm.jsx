@@ -18,15 +18,15 @@ export default function ContactForm() {
 
   if (submitted) {
     return (
-      <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center h-full flex flex-col items-center justify-center">
-        <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mb-4">
+      <div className="bg-secondary/10 border border-secondary/20 rounded-2xl p-8 text-center h-full flex flex-col items-center justify-center">
+        <div className="w-16 h-16 bg-primary/5 text-secondary rounded-full flex items-center justify-center mb-4">
           <Send className="w-8 h-8" />
         </div>
-        <h3 className="text-2xl font-bold text-green-900 mb-2">Message Sent!</h3>
-        <p className="text-green-700">Thank you for reaching out. We will get back to you shortly.</p>
+        <h3 className="text-2xl font-bold text-secondary mb-2">Message Sent!</h3>
+        <p className="text-secondary">Thank you for reaching out. We will get back to you shortly.</p>
         <button
           onClick={() => setSubmitted(false)}
-          className="mt-6 px-6 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 font-medium transition-colors"
+          className="mt-6 px-6 py-2 bg-secondary text-white rounded-lg hover:bg-primary/70 font-medium transition-colors"
         >
           Send Another Message
         </button>
@@ -78,7 +78,7 @@ export default function ContactForm() {
             type="tel"
             id="phone"
             className="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
-            placeholder="+91 98765 43210"
+            placeholder="+91 0000000000"
           />
         </div>
 

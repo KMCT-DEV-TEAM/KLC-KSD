@@ -68,7 +68,7 @@ export default function HeroSection() {
         <div className="flex-1 py-3 px-6 overflow-hidden flex items-center bg-secondary">
           <div className="animate-marquee whitespace-nowrap flex items-center gap-3 text-blue-100 font-medium">
             <span className="w-2 h-2 rounded-full bg-[#0077c8] inline-block animate-pulse" />
-            <span>Admissions are now open for 2026–27 – Apply Today! Call: 9691 000 000 | Visit: www.kmct.org</span>
+            <span>Admissions are now open for 2026–27 – Apply Today! Call: 8113064000 | Visit: https://admissions.kmct.org/</span>
           </div>
         </div>
       </div>
