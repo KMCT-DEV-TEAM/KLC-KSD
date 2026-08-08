@@ -3,8 +3,8 @@ import ProgramHero from '../components/ProgramHero';
 import ProgramDetails from '../components/ProgramDetails';
 
 export const metadata = {
-  title: 'LLB (3 Years) | KMCT Law College Kasaragod',
-  description: 'LLB (3 Years) degree program at KMCT Law College, Kasaragod.',
+  title: 'LLB (3 Years) | KMCT College of Legal Studies Kasaragod',
+  description: 'LLB (3 Years) degree program at KMCT College of Legal Studies, Kasaragod.',
 };
 
 export default function LLBPage() {
@@ -19,11 +19,11 @@ export default function LLBPage() {
       />
       
       <ProgramDetails 
-        aboutText="The 3-Year LLB Program at KMCT Law College is designed for graduates from any discipline who wish to pursue a career in law. This program provides students with a comprehensive understanding of legal principles and practices. The curriculum covers essential areas such as constitutional law, criminal law, contract law, family law, and more, equipping students with the knowledge and skills required to excel in the legal profession."
+        aboutText="The 3-Year LLB Program at KMCT College of Legal Studies is designed for graduates from any discipline who wish to pursue a career in law. This program provides students with a comprehensive understanding of legal principles and practices. The curriculum covers essential areas such as constitutional law, criminal law, contract law, family law, and more, equipping students with the knowledge and skills required to excel in the legal profession."
         eligibility={[
           "A Bachelor's degree (in any discipline) from a recognized university.",
           "A minimum of 45% aggregate marks in the qualifying degree (relaxation of marks for reserved categories as per university norms).",
-          "Candidates must also meet any additional requirements set by the University of Calicut or Bar Council of India."
+          "Candidates must also meet any additional requirements set by the University of Kannur or Bar Council of India."
         ]}
         duration="The 3-Year LLB Program is completed in three academic years, divided into six semesters."
         features={[

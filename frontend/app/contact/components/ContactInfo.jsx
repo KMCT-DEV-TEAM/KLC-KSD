@@ -7,7 +7,7 @@ export default function ContactInfo() {
     { 
       icon: MapPin, 
       title: 'Our Location', 
-      text: 'KMCT Law College Campus, Mampara, Pazhur P.O., Kuttippuram, Malappuram - 679571' 
+      text: 'KMCT College of Legal Studies, Near KCA Stadium, Mundodu, Ullody P.O., Manya, Kasaragod, Kerala 671321' 
     },
     { 
       icon: Phone, 
@@ -61,14 +61,14 @@ export default function ContactInfo() {
         {/* Google Map */}
         <div className="w-full h-full min-h-[500px] rounded-2xl overflow-hidden shadow-lg border border-slate-200">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15664.129379659021!2d76.012586!3d10.844781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba7ba004cfb92d5%3A0xc3f8e547df607684!2sKMCT%20Law%20College%2C%20Kuttippuram!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3894.5286304364636!2d75.04716788504265!3d12.547355392417709!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba4832b020f1fdf%3A0xf0b74a4b13714e4c!2sKMCT%20College%20of%20Legal%20Studies%20%2C%20KASARAGOD!5e0!3m2!1sen!2sin!4v1786101275962!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0, minHeight: '500px' }}
             allowFullScreen=""
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
-            title="KMCT Law College Location"
+            title="KMCT College of Legal Studies Location"
             className="w-full h-full grayscale-[20%] contrast-[95%]"
           ></iframe>
         </div>

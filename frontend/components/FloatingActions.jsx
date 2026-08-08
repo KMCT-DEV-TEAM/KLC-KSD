@@ -21,14 +21,14 @@ export default function FloatingActions() {
       {/* Action Icon Buttons */}
       <div className="flex flex-col gap-1.5 shadow-2xl">
         <a
-          href="tel:+919691000000"
+          href="tel:+918113064000"
           title="Call Us"
           className="w-10 h-10 bg-[#005691] hover:bg-[#004070] flex items-center justify-center text-white rounded-l-lg shadow-md transition-transform hover:-translate-x-1"
         >
           <Phone className="w-4 h-4" />
         </a>
         <a
-          href="https://wa.me/919691000000"
+          href="https://wa.me/918086634000"
           target="_blank"
           rel="noreferrer"
           title="WhatsApp"
@@ -37,19 +37,21 @@ export default function FloatingActions() {
           <MessageCircle className="w-4 h-4" />
         </a>
         <a
-          href="mailto:lawcollege.ksd@kmct.edu.in"
+          href="mailto:kmctcls@kmct.org"
           title="Email Us"
           className="w-10 h-10 bg-[#0077c8] hover:bg-[#0060a0] flex items-center justify-center text-white rounded-l-lg shadow-md transition-transform hover:-translate-x-1"
         >
           <Mail className="w-4 h-4" />
         </a>
-        <Link
-          href="/contact"
+        <a
+          href="https://maps.app.goo.gl/XKKCDRSYRXPF7dEd9"
+          target="_blank"
+          rel="noreferrer"
           title="Location Map"
           className="w-10 h-10 bg-slate-800 hover:bg-slate-700 flex items-center justify-center text-white rounded-l-lg shadow-md transition-transform hover:-translate-x-1"
         >
           <MapPin className="w-4 h-4" />
-        </Link>
+        </a>
       </div>
     </div>
   );

@@ -25,11 +25,11 @@ const AboutCollegeDetails = () => {
 
           <div className="space-y-6 text-base text-slate-600 leading-relaxed text-justify">
             <p>
-              KMCT College of Legal Studies, Kasaragod is a self-financing law college established in the year 2013 and has set a benchmark for quality legal education in the State of Kerala. The objective of the institution focused on imparting legal education to all sects of the society. The institution was built on strong foundation and has maintained its reputation as a fine institution for legal education over a period of time.
+              KMCT College of Legal Studies, Kasaragod is a self-financing law college which has set a benchmark for quality legal education in the State of Kerala. The objective of the institution focused on imparting legal education to all sects of the society. The institution was built on strong foundation and has maintained its reputation as a fine institution for legal education over a period of time.
             </p>
 
             <p>
-              The Kunhitharuvai Memorial Charitable Trust Group of Institutions or KMCT was established in 1994 by Dr. K. Moidu a leading medical practitioner and a visionary educationist with an objective of promoting high standards and excellence in the field of technical and professional education and to provide information and training in a systematic manner to the student community, expanded in to a conglomeration of around eighteen educational institutions under the brand name &quot;KMCT Group of Institutions&quot;. The KMCT Group of Institutions is one of the largest groups of educational institutions in Kerala.
+              The Kunhitharuvai Memorial Charitable Trust Group of Institutions or KMCT was established in 1994 by Dr. K. Moidu a leading medical practitioner and a visionary educationist with an objective of promoting high standards and excellence in the field of technical and professional education and to provide information and training in a systematic manner to the student community. The KMCT Group of Institutions is one of the largest groups of educational institutions in Kerala.
             </p>
 
             <p>

@@ -66,13 +66,13 @@ const PrincipalsMessage = () => {
 
             <div className="space-y-4 text-slate-600 text-sm md:text-[15px] leading-relaxed text-justify relative z-10">
               <p>
-                Welcome to KMCT Law College, Kuttippuram — a hub of academic excellence and holistic development in legal education. Since its establishment in 2013, our institution has been committed to nurturing legal professionals equipped with knowledge, ethics, and a sense of responsibility towards society.
+                Welcome to KMCT College of Legal Studies, Kasaragod — a hub of academic excellence and holistic development in legal education. Since its establishment in 2013, our institution has been committed to nurturing legal professionals equipped with knowledge, ethics, and a sense of responsibility towards society.
               </p>
               <p>
-                At KMCT Law College, we believe that education is not just about academics but also about character-building and practical exposure. Our students benefit from a robust curriculum, engaging moot court practices, and active participation in conferences, seminars, and community outreach programs. The support of a dedicated faculty team, modern facilities, and an inspiring learning environment ensures that our graduates are well-prepared to face the challenges of the legal profession.
+                At KMCT College of Legal Studies, we believe that education is not just about academics but also about character-building and practical exposure. Our students benefit from a robust curriculum, engaging moot court practices, and active participation in conferences, seminars, and community outreach programs. The support of a dedicated faculty team, modern facilities, and an inspiring learning environment ensures that our graduates are well-prepared to face the challenges of the legal profession.
               </p>
               <p>
-                We take pride in our students&apos; achievements, from excelling in academics to securing placements in reputed organizations. As we continue to uphold our mission of fostering excellence, I invite you to explore KMCT Law College and join us in our journey toward creating a brighter future for legal education.
+                We take pride in our students&apos; achievements, from excelling in academics to securing placements in reputed organizations. As we continue to uphold our mission of fostering excellence, I invite you to explore KMCT College of Legal Studies and join us in our journey toward creating a brighter future for legal education.
               </p>
             </div>
 
@@ -81,7 +81,7 @@ const PrincipalsMessage = () => {
               <div>
                 <p className="text-slate-500 italic text-sm mb-0.5">Warm regards,</p>
                 <p className="font-bold text-lg text-slate-900 leading-tight">Dr. Sheena C S</p>
-                <p className="text-xs text-primary font-medium">KMCT Law College</p>
+                <p className="text-xs text-primary font-medium">KMCT College of Legal Studies</p>
               </div>
             </div>
           </div>
