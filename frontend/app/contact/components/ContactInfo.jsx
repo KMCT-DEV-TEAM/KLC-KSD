@@ -4,33 +4,33 @@ import ContactForm from './ContactForm';
 
 export default function ContactInfo() {
   const contactDetails = [
-    { 
-      icon: MapPin, 
-      title: 'Our Location', 
-      text: 'KMCT College of Legal Studies, Near KCA Stadium, Mundodu, Ullody P.O., Manya, Kasaragod, Kerala 671321' 
+    {
+      icon: MapPin,
+      title: 'Our Location',
+      text: 'KMCT College of Legal Studies, Near KCA Stadium, Mundodu, Ullody P.O., Manya, Kasaragod, Kerala 671321'
     },
-    { 
-      icon: Phone, 
-      title: 'Phone Number', 
+    {
+      icon: Phone,
+      title: 'Phone Number',
       text: (
-        <a href="https://wa.me/918086634000" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
-          +91 80866 34000
+        <a href="tel:+918113064000" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">
+          +91 8113064000
         </a>
       )
     },
-    { 
-      icon: Mail, 
-      title: 'Email Address', 
+    {
+      icon: Mail,
+      title: 'Email Address',
       text: (
         <a href="mailto:kmctcls@kmct.org" className="hover:text-primary transition-colors">
           kmctcls@kmct.org
         </a>
       )
     },
-    { 
-      icon: Clock, 
-      title: 'Working Hours', 
-      text: 'Monday – Saturday: 9:00 AM – 4:30 PM' 
+    {
+      icon: Clock,
+      title: 'Working Hours',
+      text: 'Monday – Saturday: 9:00 AM – 4:30 PM'
     },
   ];
 
@@ -57,7 +57,7 @@ export default function ContactInfo() {
       {/* Form and Google Map */}
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
         <ContactForm />
-        
+
         {/* Google Map */}
         <div className="w-full h-full min-h-[500px] rounded-2xl overflow-hidden shadow-lg border border-slate-200">
           <iframe
