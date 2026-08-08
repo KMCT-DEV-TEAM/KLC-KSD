@@ -11,13 +11,13 @@ export default function ManagementDesk() {
     },
     {
       name: "Dr. K M Navas",
-      title: "Chairman, KMCT Group",
+      title: "Chairman",
       message: "Our commitment at KMCT is to foster an environment where academic rigor meets ethical responsibility. We aim to mold legal professionals who will uphold justice and lead with integrity.",
       image: "/images/Dr Navas K M.jpg.jpeg"
     },
     {
       name: "Dr. Ayisha Nazreen",
-      title: "Director",
+      title: "Executive Trustee & Director",
       message: "Legal education is the cornerstone of a just society. We integrate practical learning with deep theoretical insights to prepare our students for global challenges.",
       image: "/images/Dr Ayisha Nazreen - Excecutive Trustee & Director.jpg.jpeg"
     }
@@ -57,7 +57,7 @@ export default function ManagementDesk() {
                 {/* Subtle gradient overlay at the bottom of the image for depth */}
                 <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
-              
+
               {/* Text Content */}
               <div className="p-6 bg-white relative z-10 flex flex-col items-center text-center flex-1">
                 <h3 className="text-xl font-extrabold text-slate-900 group-hover:text-primary transition-colors duration-300 mb-2">
