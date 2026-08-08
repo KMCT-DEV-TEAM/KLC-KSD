@@ -39,7 +39,7 @@ export default function AboutCollege() {
               </span>
             </div>
             <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 leading-tight">
-              <span className='text-secondary'>A Legacy of Legal</span>  <span className="text-primary">Excellence</span>
+              <span className='text-secondary'>Continuing a Legacy of Legal</span>  <span className="text-primary">Excellence</span>
             </h2>
           </div>
 
@@ -48,15 +48,7 @@ export default function AboutCollege() {
           </p>
 
           <div className="grid sm:grid-cols-2 gap-6 pt-4">
-            <div className="flex gap-4">
-              <div className="w-12 h-12 rounded-xl bg-secondary/5 border border-secondary/10 flex items-center justify-center shrink-0">
-                <Target className="w-6 h-6 text-secondary" />
-              </div>
-              <div>
-                <h4 className="text-slate-900 font-bold text-sm mb-1">Our Mission</h4>
-                <p className="text-xs text-slate-500">To provide socially relevant legal education and promote justice.</p>
-              </div>
-            </div>
+
 
             <div className="flex gap-4">
               <div className="w-12 h-12 rounded-xl bg-secondary/5 border border-secondary/10 flex items-center justify-center shrink-0">
@@ -65,6 +57,16 @@ export default function AboutCollege() {
               <div>
                 <h4 className="text-slate-900 font-bold text-sm mb-1">Our Vision</h4>
                 <p className="text-xs text-slate-500">To be a center of excellence in legal studies and research.</p>
+              </div>
+            </div>
+
+            <div className="flex gap-4">
+              <div className="w-12 h-12 rounded-xl bg-secondary/5 border border-secondary/10 flex items-center justify-center shrink-0">
+                <Target className="w-6 h-6 text-secondary" />
+              </div>
+              <div>
+                <h4 className="text-slate-900 font-bold text-sm mb-1">Our Mission</h4>
+                <p className="text-xs text-slate-500">To provide socially relevant legal education and promote justice.</p>
               </div>
             </div>
           </div>

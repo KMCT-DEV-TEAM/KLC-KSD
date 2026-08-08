@@ -27,7 +27,7 @@ const Recognition = () => {
             <span className="w-12 md:w-16 h-px bg-primary"></span>
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold text-secondary leading-tight">
-            Recognitions & Affiliations
+            Affiliations & Recognitions
           </h2>
         </div>
 

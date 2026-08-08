@@ -105,7 +105,7 @@ export default function GrievanceForm() {
             type="text"
             required
             className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all placeholder:text-slate-400"
-            placeholder="Enter Complaint Name"
+            placeholder="Enter Complaint Subject"
           />
           <input
             type="text"
