@@ -1,13 +1,71 @@
 'use client';
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Send, ChevronDown } from 'lucide-react';
+
+const CustomSelect = ({ value, onChange, options, placeholder }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const ref = useRef(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (ref.current && !ref.current.contains(event.target)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const selectedOption = options.find(opt => opt.value === value);
+
+  return (
+    <div className="relative w-full" ref={ref}>
+      <div
+        className={`w-full px-5 py-3.5 rounded-lg border ${isOpen ? 'border-primary ring-2 ring-primary/20 bg-white' : 'border-slate-200 bg-slate-50'} cursor-pointer flex justify-between items-center transition-all`}
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span className={selectedOption ? 'text-slate-900' : 'text-slate-400'}>
+          {selectedOption ? selectedOption.label : placeholder}
+        </span>
+        <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+      </div>
+      
+      {isOpen && (
+        <div className="absolute z-50 w-full mt-2 bg-white border border-slate-200 rounded-lg shadow-xl overflow-hidden max-h-60 overflow-y-auto">
+          {options.map((opt) => (
+            <div
+              key={opt.value}
+              className={`px-5 py-3 cursor-pointer hover:bg-slate-50 transition-colors text-sm ${value === opt.value ? 'bg-primary/5 text-primary font-medium' : 'text-slate-600'}`}
+              onClick={() => {
+                onChange(opt.value);
+                setIsOpen(false);
+              }}
+            >
+              {opt.label}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default function GrievanceForm() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
 
+  // Form State
+  const [stateVal, setStateVal] = useState('');
+  const [programVal, setProgramVal] = useState('');
+  const [natureVal, setNatureVal] = useState('');
+
   const handleSubmit = (e) => {
     e.preventDefault();
+    if (!stateVal || !programVal || !natureVal) {
+      alert("Please fill in all dropdown fields.");
+      return;
+    }
+    
     setIsSubmitting(true);
     // Simulate API call
     setTimeout(() => {
@@ -79,19 +137,17 @@ export default function GrievanceForm() {
               placeholder="Enter Address"
             />
           </div>
-          <div className="relative">
-            <select
-              required
-              className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-slate-600 appearance-none"
-            >
-              <option value="">Select a State</option>
-              <option value="kerala">Kerala</option>
-              <option value="karnataka">Karnataka</option>
-              <option value="tamilnadu">Tamil Nadu</option>
-              <option value="other">Other</option>
-            </select>
-            <ChevronDown className="w-5 h-5 text-slate-400 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
-          </div>
+          <CustomSelect
+            placeholder="Select a State"
+            value={stateVal}
+            onChange={setStateVal}
+            options={[
+              { value: 'kerala', label: 'Kerala' },
+              { value: 'karnataka', label: 'Karnataka' },
+              { value: 'tamilnadu', label: 'Tamil Nadu' },
+              { value: 'other', label: 'Other' }
+            ]}
+          />
           <input
             type="text"
             required
@@ -102,32 +158,28 @@ export default function GrievanceForm() {
 
         {/* Row 3: Programme and Nature of Grievance */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-          <div className="relative">
-            <select
-              required
-              className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-slate-600 appearance-none"
-            >
-              <option value="">Program</option>
-              <option value="ba_llb">BA LL.B (5 Years)</option>
-              <option value="llb">LLB (3 Years)</option>
-              <option value="other">Other</option>
-            </select>
-            <ChevronDown className="w-5 h-5 text-slate-400 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
-          </div>
-          <div className="relative">
-            <select
-              required
-              className="w-full px-5 py-3.5 rounded-lg border border-slate-200 bg-slate-50 focus:bg-white focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all text-slate-600 appearance-none"
-            >
-              <option value="">Nature of Grievance</option>
-              <option value="academic">Academic</option>
-              <option value="administrative">Administrative</option>
-              <option value="infrastructure">Infrastructure</option>
-              <option value="harassment">Harassment</option>
-              <option value="other">Other</option>
-            </select>
-            <ChevronDown className="w-5 h-5 text-slate-400 absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" />
-          </div>
+          <CustomSelect
+            placeholder="Program"
+            value={programVal}
+            onChange={setProgramVal}
+            options={[
+              { value: 'ba_llb', label: 'BA LL.B (5 Years)' },
+              { value: 'llb', label: 'LLB (3 Years)' },
+              { value: 'other', label: 'Other' }
+            ]}
+          />
+          <CustomSelect
+            placeholder="Nature of Grievance"
+            value={natureVal}
+            onChange={setNatureVal}
+            options={[
+              { value: 'academic', label: 'Academic' },
+              { value: 'administrative', label: 'Administrative' },
+              { value: 'infrastructure', label: 'Infrastructure' },
+              { value: 'harassment', label: 'Harassment' },
+              { value: 'other', label: 'Other' }
+            ]}
+          />
         </div>
 
         {/* Row 4: Description */}
