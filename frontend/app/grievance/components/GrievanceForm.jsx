@@ -29,7 +29,7 @@ const CustomSelect = ({ value, onChange, options, placeholder }) => {
         </span>
         <ChevronDown className={`w-5 h-5 text-slate-400 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
       </div>
-      
+
       {isOpen && (
         <div className="absolute z-50 w-full mt-2 bg-white border border-slate-200 rounded-lg shadow-xl overflow-hidden max-h-60 overflow-y-auto">
           {options.map((opt) => (
@@ -65,7 +65,7 @@ export default function GrievanceForm() {
       alert("Please fill in all dropdown fields.");
       return;
     }
-    
+
     setIsSubmitting(true);
     // Simulate API call
     setTimeout(() => {
