@@ -28,7 +28,7 @@ export default function GrievancePage() {
         {/* Content Container */}
         <div className="relative z-10 w-full max-w-7xl mx-auto px-6 mb-12">
           <div className="max-w-3xl text-left space-y-6">
-            <span className="text-sm font-bold  text-primary uppercase tracking-widest inline-block mb-2">
+            <span className="text-sm font-bold text-primary uppercase tracking-widest inline-block mb-2">
               Support & Redressal
             </span>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight">
