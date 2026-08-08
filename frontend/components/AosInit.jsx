@@ -11,10 +11,12 @@ export default function AosInit() {
     const initAOS = setTimeout(() => {
       AOS.init({
         duration: 800,
-        once: false,
+        once: true,
         offset: 50,
         easing: 'ease-in-out',
+        mirror: false,
       });
+      AOS.refresh();
     }, 100);
 
     return () => clearTimeout(initAOS);
