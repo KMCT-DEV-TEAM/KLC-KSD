@@ -10,7 +10,7 @@ export default function ManagementDesk() {
       image: "/images/Founder - Dr K Moidu.jpg.jpeg"
     },
     {
-      name: "Dr. K M Navas",
+      name: "Dr. Navas K M ",
       title: "Chairman",
       message: "Our commitment at KMCT is to foster an environment where academic rigor meets ethical responsibility. We aim to mold legal professionals who will uphold justice and lead with integrity.",
       image: "/images/Dr Navas K M.jpg.jpeg"
