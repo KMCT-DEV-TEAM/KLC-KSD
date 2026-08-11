@@ -13,7 +13,7 @@ export const metadata = {
   },
   description: 'KMCT College of Legal Studies is a premier law institute in Kasaragod offering BA LLB and LLB programs with excellent faculties and modern infrastructure.',
   openGraph: {
-    title: 'KMCT College of Legal Studies',
+    title: 'KMCT College of Legal Studies | Best Law College in Kasaragod',
     description: 'KMCT College of Legal Studies is a premier law institute in Kasaragod offering BA LLB and LLB programs.',
     url: '/',
     siteName: 'KMCT College of Legal Studies',
@@ -30,7 +30,7 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'KMCT College of Legal Studies',
+    title: 'KMCT College of Legal Studies | Best Law College in Kasaragod',
     description: 'Premier law institute in Kasaragod offering BA LLB and LLB programs.',
     images: ['/images/card.jpeg'], // The image that will show up on Twitter
   },
