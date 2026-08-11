@@ -2,7 +2,7 @@ import React from 'react';
 import ContactInfo from './components/ContactInfo';
 
 export const metadata = {
-  title: 'Contact Us | KMCT College of Legal Studies Kasaragod',
+  title: 'Contact Us',
   description: 'Get in touch with KMCT College of Legal Studies Kasaragod office. Find our address, phone number, and location on the map.',
 };
 

@@ -3,7 +3,7 @@ import Image from 'next/image';
 import GrievanceForm from './components/GrievanceForm';
 
 export const metadata = {
-  title: 'Grievance Redressal | KMCT College of Legal Studies Kasaragod',
+  title: 'Grievance Redressal',
   description: 'Register and submit your grievances online at KMCT College of Legal Studies Kasaragod.',
 };
 

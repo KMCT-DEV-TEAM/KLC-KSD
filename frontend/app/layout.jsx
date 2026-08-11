@@ -6,8 +6,34 @@ import PageTransitionLoader from '../components/PageTransitionLoader';
 import FloatingActions from '../components/FloatingActions';
 
 export const metadata = {
-  title: 'KMCT College of Legal Studies',
-  description: 'KMCT College of Legal Studies - Empowering Excellence in Legal Education',
+  metadataBase: new URL('https://kmctcls.org'), // Update this to your actual production domain
+  title: {
+    default: 'KMCT College of Legal Studies | Best Law College in Kasaragod',
+    template: '%s | KMCT College of Legal Studies'
+  },
+  description: 'KMCT College of Legal Studies is a premier law institute in Kasaragod offering BA LLB and LLB programs with excellent faculties and modern infrastructure.',
+  openGraph: {
+    title: 'KMCT College of Legal Studies',
+    description: 'KMCT College of Legal Studies is a premier law institute in Kasaragod offering BA LLB and LLB programs.',
+    url: '/',
+    siteName: 'KMCT College of Legal Studies',
+    images: [
+      {
+        url: '/images/card.jpeg', // The image that will show up on WhatsApp
+        width: 1200,
+        height: 630,
+        alt: 'KMCT College of Legal Studies Logo',
+      },
+    ],
+    locale: 'en_IN',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'KMCT College of Legal Studies',
+    description: 'Premier law institute in Kasaragod offering BA LLB and LLB programs.',
+    images: ['/images/card.jpeg'], // The image that will show up on Twitter
+  },
 };
 
 export default function RootLayout({ children }) {

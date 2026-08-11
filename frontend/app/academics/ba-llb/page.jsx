@@ -3,7 +3,7 @@ import ProgramHero from '../components/ProgramHero';
 import ProgramDetails from '../components/ProgramDetails';
 
 export const metadata = {
-  title: 'BA LL.B (5 Years) | KMCT College of Legal Studies Kasaragod',
+  title: 'BA LL.B (5 Years)',
   description: 'BA LL.B (5 Years) integrated degree program at KMCT College of Legal Studies, Kasaragod.',
 };
 

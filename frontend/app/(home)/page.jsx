@@ -6,6 +6,11 @@ import ManagementDesk from './components/ManagementDesk';
 import OurPrograms from './components/OurPrograms';
 import Facilities from './components/Facilities';
 
+export const metadata = {
+  title: 'Home',
+};
+
+
 export default function HomePage() {
   return (
     <div className="bg-white text-slate-900 min-h-screen">

@@ -7,7 +7,7 @@ import Recognition from './components/Recognition';
 import VisionMission from './components/VisionMission';
 
 export const metadata = {
-  title: 'About Us | KMCT College of Legal Studies Kasaragod',
+  title: 'About Us',
   description: 'Learn about KMCT College of Legal Studies, Kasaragod - our mission, vision, and legal education legacy.',
 };
 
