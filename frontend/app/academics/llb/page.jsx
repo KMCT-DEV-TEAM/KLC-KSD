@@ -3,7 +3,7 @@ import ProgramHero from '../components/ProgramHero';
 import ProgramDetails from '../components/ProgramDetails';
 
 export const metadata = {
-  title: 'LLB (3 Years) | KMCT College of Legal Studies Kasaragod',
+  title: 'LLB (3 Years)',
   description: 'LLB (3 Years) degree program at KMCT College of Legal Studies, Kasaragod.',
 };
 

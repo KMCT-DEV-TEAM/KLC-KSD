@@ -3,7 +3,7 @@
 @theme {
   --color-primary: #046CB5;
   --color-secondary: #002b4d;
-  --animate-marquee: marquee 25s linear infinite;
+  --animate-marquee: marquee 60s linear infinite;
 
   @keyframes marquee {
     0% { transform: translateX(0%); }

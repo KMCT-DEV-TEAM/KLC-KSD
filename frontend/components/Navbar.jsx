@@ -199,7 +199,7 @@ export default function Navbar() {
               onClick={() => setMobileMenuOpen(false)}
               className="w-full text-center py-3 rounded bg-secondary hover:bg-primary text-white text-sm font-bold flex items-center justify-center gap-2 transition-all"
             >
-              <Download className="w-4 h-4" /> Apply Now
+              Apply Now
             </a>
           </div>
         </div>

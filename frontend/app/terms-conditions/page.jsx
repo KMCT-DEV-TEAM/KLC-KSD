@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Terms of Service | KMCT College of Legal Studies',
+  title: 'Terms of Service',
   description: 'Terms and Conditions for using the KMCT College of Legal Studies website and services.',
 };
 

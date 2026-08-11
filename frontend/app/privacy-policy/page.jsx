@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'Privacy Policy | KMCT College of Legal Studies',
+  title: 'Privacy Policy',
   description: 'Privacy Policy of KMCT College of Legal Studies. Learn how we handle and protect your personal information.',
 };
 
